@@ -9,17 +9,25 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Rubik:wght@700&display=swap" rel="stylesheet">
 </head>
 
 <style>
   body {
     height: 100vh;
-    width: 100vh;
-    background-color: #f7ecd8;
+    width: 100vw;
     overflow: none;
-    font-family: 'Amatic SC', cursive;
+    /* font-family: 'Amatic SC', cursive; */
+    font-family: 'Rubik';
     text-align: center;
+    background-image: url('img/landing-background.jpeg');
+        background-position: center;
+    background-size: cover;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
   }
 
   .corner-symbol {
@@ -37,11 +45,12 @@
     right: 0;
   }
 
-  #center {
-    position: absolute;
+  .center {
+    /* position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 80%; */
   }
 
   h1,h2,p {
@@ -49,48 +58,110 @@
   }
 
   h1 {
-    font-size: 8rem;
+    font-size: 4.688rem;
+    font-weight: 100;
   }
 
   p {
-    font-size: 2rem
+    font-size: 1rem;
+    font-family: Arial;
+    font-weight: 600;
   }
 
   h2 {
-    font-size: 6rem;
+    font-size: 2.5rem;
+    font-weight: 100;
+    margin-top: 7px;
   }
 
   button {
-    padding: 5px;
+    padding: 25px;
+    border-radius: 100px;
+    margin-top: 25px;
     background-color: green;
     color: white;
-    font-family: 'Amatic SC', cursive;
+    font-family: 'Rubik', cursive;
     border: none;
-    font-size: 2rem;
+    font-size: 1.625rem;
+  }
+
+  #left {
+    width: 50%;
+    float: left;
+  }
+
+  #right {
+    width: 50%;
+    float: right;
+    max-width: 700px;
+  }
+
+  .container {
+    height: 100%;
+    width: 50%;
+    margin-left: 50%;
+  }
+
+  .flex-box {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .inner {
+    background-color: white;
+    padding: 25px 93px;
+  }
+
+  @media (max-width: 480px) {
+    .container {
+      width: 100%;
+      margin: 0;
+    }
+
+    .inner {
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 50px;
+    }
+
+    h2 {
+      font-size: 28px;
+    }
+
+    p {
+      font-size: 14px;
+    }
   }
 </style>
 
 <body>
-  <img id="air-symbol" class="corner-symbol" src="img/AirSymbol.png">
-  <img id="earth-symbol" class="corner-symbol" src="img/EarthSymbol.png">
+  <!-- <img id="air-symbol" class="corner-symbol" src="img/AirSymbol.png">
+  <img id="earth-symbol" class="corner-symbol" src="img/EarthSymbol.png"> -->
 
-  <div id="center">
-    <h1>Scout Quest</h1>
-    <p>presents</p>
-    <h2>Master of the Elements</h2>
-    <p>Embark on a thrilling journey to harness the power of the elements!</p>
-    <p>In this Scout Quest adventure, four teams will race against each other to master</p>
-    <p>
-      <span class='fire-text'>Fire</span>,
-      <span class='water-text'>Water</span>,
-      <span class='earth-text'>Earth</span>,and
-      <span class='air-text'>Air</span>.
-    </p>
-    <p>Solve puzzles, find clues, and navigate your way through the elements to come out on top.</p>
-    <p>Will you have what it takes to harness the power of the elements and claim victory?</p>
-
-    <button type="">Join the quest now!</button>
+  <div class="container">
+    <div class="flex-box">
+      <div style="max-width: 700px; width: 100%">
+        <div class="inner">
+          <h1>ScoutQuest</h1>
+          <p style="font-size: 24.5px">presents</p>
+          <h2>Master of the Elements</h2>
+          <br>
+          <p style="margin-bottom: 7px">Embark on a thrilling journey to harness the power of the elements! In this Scout Quest adventure, four teams will race against each other to master
+            <span class='fire-text'>Fire</span>,
+            <span class='water-text'>Water</span>,
+            <span class='earth-text'>Earth</span>,and
+            <span class='air-text'>Air</span>.</p>
+          <p>Solve puzzles, find clues, and navigate your way through the elements to come out on top. Will you have what it takes to harness the power of the elements and claim victory?</p>
+          <button><a href="https://forms.gle/LxKJFuynjLaifQwv8">JOIN THE QUEST</a></button>
+        </div>
+      </div>
+    </div>
   </div>
+
 </body>
 
 </html>
