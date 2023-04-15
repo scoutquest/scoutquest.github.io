@@ -38,6 +38,14 @@
     width: 100%;
   }
 
+  #tree {
+    max-width: 400px;
+  }
+
+  #reveal {
+    display: none;
+  }
+
   @media (max-width: 480px) {}
 </style>
 
@@ -48,11 +56,44 @@
   <div class="container">
     <div class="flex-box">
       <div class="inner">
-        <h1>612-640-6080</h1>
+        <div id="water-form">
+          <p><b>How To Crack The Code</b></p>
+
+          <p>The Code can be solved using <b>Native Pollinator Gardening</b>.
+          Use this text to decipher the clues that are [Line - Word - Letter].</p>
+
+          <p>I’ll get you started…</p>
+          <p><b>[13-2-2] is A</b></p>
+
+          <p><b>Native Pollinator Gardening</b> can be found using the map on the path nearby.</p>
+
+          <p><b style="color: red">YOU ARE HERE</b> is your guide.</p>
+          <input type="text" id="water-code" placeholder="Password">
+          <button id="submit" onclick="checkCode()">Submit</button>
+        </div>
+        <div id="reveal">
+          <p>Go back to the circle where you began,</p>
+          <p>Find the red bike on its stand.</p>
+          <p>Inside you’ll find the tool you need,</p>
+          <p>Unlock it with the code seed.</p>
+        </div>
       </div>
     </div>
   </div>
 
 </body>
+
+<script>
+  function checkCode() {
+    let code = document.getElementById("water-code").value;
+
+    if (code.toLowerCase() == 'atmosphere') {
+      document.getElementById("reveal").style.display = 'block';
+      document.getElementById("water-form").style.display = 'none';
+    } else {
+      alert('Try Again');
+    }
+  }
+</script>
 
 </html>
