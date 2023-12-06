@@ -26,3 +26,11 @@ body {
     text-align: center;
     width: 100%;
 }
+
+#tree {
+    max-width: 400px;
+}
+
+#reveal {
+    display: none;
+}
