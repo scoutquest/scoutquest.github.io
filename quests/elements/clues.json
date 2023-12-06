@@ -6,7 +6,7 @@
         "type": "Audio Clue",
         "category": "Fire",
         "text": "1F↓ | Artist Name (10)",
-        "audio": "elements/audio/FireClue1-4CX6TZPA.mp3",
+        "audio": "http://scoutquest.co/quests/elements/audio/FireClue1-4CX6TZPA.mp3",
         "image": null
     },
     {
@@ -16,7 +16,7 @@
         "type": "Audio Clue",
         "category": "Fire",
         "text": "2C→ | Artist Name (5) ",
-        "audio": "elements/audio/FireClue2-grTp7XkD9.mp3",
+        "audio": "http://scoutquest.co/quests/elements/audio/FireClue2-grTp7XkD9.mp3",
         "image": null
     },
     {
@@ -26,7 +26,7 @@
         "type": "Audio Clue",
         "category": "Fire",
         "text": "5A→ | Song Title (12)",
-        "audio": "elements/audio/FireClue3-m4vfVokUV.mp3",
+        "audio": "http://scoutquest.co/quests/elements/audio/FireClue3-m4vfVokUV.mp3",
         "image": null
     },
     {
@@ -88,7 +88,7 @@
         "text": "Continue down the Ecology Trail,<br>Keep the photo in hand and you will prevail.<br>It will guide you to where the next clue lay.<br>So follow its lead, without delay.",
         "shortText": "Continue down the Ecology Trail...",
         "audio": null,
-        "image": "assets/elements/images/WaterClue1-oH8AZgEDk.png"
+        "image": "http://scoutquest.co/quests/assets/elements/images/WaterClue1-oH8AZgEDk.png"
     },
     {
         "id": "WC2",
@@ -110,7 +110,7 @@
         "text": "Enter the secret code.",
         "secretCode": "riverview",
         "secretText": "<p>The final step to mastering water is on the Riverview Trail. Use the picture and coordinates below to reel out what you need to prove you've mastered water.</p><h3>36.1652839,-86.7252635</h3>",
-        "secretImage": "assets/elements/images/WaterClue3-4CX323PA.png",
+        "secretImage": "http://scoutquest.co/quests/assets/elements/images/WaterClue3-4CX323PA.png",
         "audio": null,
         "image": null
     },
