@@ -409,3 +409,202 @@ a.book-now:focus {
     /* Slightly darker shade of pink for hover */
     /* Use a darker green if you go with the green color */
 }
+
+/* General styles for mobile devices */
+@media (max-width: 768px) {
+    header .hero-content {
+        padding-left: 15px;
+        /* Adjust padding for smaller screens */
+        align-items: center;
+        /* Center content for smaller screens */
+        text-align: center;
+        justify-content: center;
+        height: 100%;
+    }
+
+    header .hero-content .logo {
+        max-width: 80%;
+        /* Adjust logo size for smaller screens */
+        margin-bottom: 15px;
+    }
+
+    header .hero-content .hero-text {
+        max-width: 100%;
+        /* Allow text to fill container */
+        font-size: 1.5em;
+        /* Adjust font size for readability */
+    }
+
+    .master-of-elements .elements-icons {
+        flex-direction: column;
+        /* Stack icons vertically on smaller screens */
+        gap: 20px;
+    }
+
+    .master-of-elements .element-icon {
+        width: 100px;
+        /* Adjust icon size for smaller screens */
+        height: 100px;
+    }
+
+    .master-of-the-elements .elements-description {
+        font-size: 1em;
+    }
+
+    .about .container {
+        flex-direction: column;
+        /* Stack elements vertically */
+        align-items: center;
+        /* Center-align content */
+    }
+
+    .about .about-description {
+        max-width: 100%;
+        /* Allow description to fill container */
+        text-align: center;
+    }
+
+    .about .about-features {
+        flex-direction: column;
+        /* Stack features vertically */
+        gap: 30px;
+    }
+
+    .testimonials .testimonial-grid {
+        grid-template-columns: 1fr;
+        /* One column grid for testimonials */
+    }
+
+    .signup-section .mc-field-group {
+        flex-direction: column;
+        /* Stack input and button vertically */
+    }
+
+
+    .signup-section input[type="email"],
+    .signup-section input[type="submit"] {
+        width: 100%;
+        /* Full width for input and button */
+        margin: 10px 0;
+        /* Add space between stacked elements */
+    }
+
+        .about .about-description h2 {
+            font-size: 3.2em;
+            padding: 10px 0;
+            margin: 0;
+        }
+}
+
+/* Additional adjustments for very small devices */
+@media (max-width: 480px) {
+    .master-of-elements p,
+    .about .about-description,
+    .signup-section .signup-message {
+        font-size: 1.2em;
+        /* Slightly smaller font size for very small screens */
+    }
+
+    .about .feature img {
+        width: 100px;
+        /* Smaller feature images */
+        height: 100px;
+    }
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+
+    /* Element Icons: Stay in one row but smaller */
+    .master-of-elements .elements-icons {
+        flex-direction: row;
+        /* Keep icons in a row */
+        justify-content: center;
+        /* Center icons */
+        gap: 10px;
+        /* Reduce gap between icons */
+    }
+
+    .master-of-elements .element-icon {
+        width: 80px;
+        /* Make icons smaller */
+        height: 80px;
+    }
+
+    /* iPhone Image: Smaller and centered */
+    .iphone-wrapper {
+        display: none;
+        top: 50%;
+        /* Adjust top positioning */
+        left: 50%;
+        /* Center horizontally */
+        transform: translate(-50%, -50%) rotate(10deg);
+        /* Center and maintain rotation */
+        width: 200px;
+        /* Smaller width */
+        height: auto;
+        /* Maintain aspect ratio */
+    }
+
+    .iphone-image {
+        width: 100%;
+        /* Make the image fill the container */
+        height: auto;
+        /* Maintain aspect ratio */
+    }
+
+    /* Input Field: Prevent running off the screen */
+    .signup-section input[type="email"] {
+        flex: 1 0 auto;
+        /* Allow input to shrink but not grow beyond its content */
+        width: calc(100% - 140px);
+        /* Adjust width to prevent running off, considering button width */
+        margin-right: 10px;
+        /* Maintain gap between input and button */
+    }
+
+    .signup-section .mc-field-group {
+        flex-wrap: wrap;
+        /* Allow elements to wrap if there's not enough space */
+    }
+
+    .signup-section input[type="submit"] {
+        flex: 0 1 auto;
+        /* Allow button to shrink if necessary */
+        width: 130px;
+        /* Set a fixed width for the button */
+    }
+
+    .signup-section h2 {
+        font-size: 2.2em;
+        margin-bottom: 0.5em;
+    }
+
+    .master-of-elements .elements-description {
+        font-size: 1.2em;
+        text-transform: none;
+    }
+}
+
+/* Additional adjustments for very small devices */
+@media (max-width: 480px) {
+
+    /* Further reduce the size of element icons */
+    .master-of-elements .element-icon {
+        width: 60px;
+        height: 60px;
+        margin: 7px;
+    }
+
+    /* Adjust input and button to full width on very small screens */
+    .signup-section input[type="email"] {
+        width: 85%;
+    }
+
+    .signup-section input[type="submit"] {
+        width: 100%;
+        /* Full width for both input and button */
+        margin: 10px 0;
+        /* Add space between stacked elements */
+    }
+}
