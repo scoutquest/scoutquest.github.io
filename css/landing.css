@@ -1,0 +1,328 @@
+@font-face {
+    font-family: 'Quicksand';
+    src: url('../fonts/Quicksand-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 700;
+    font-display: swap;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+    height: 100%;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    text-align: left;
+}
+
+header .hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleX(-1);
+    z-index: -1;
+}
+
+header .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.25);
+    z-index: 1;
+}
+
+header .hero-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 5%;
+    z-index: 2;
+}
+
+header .hero-content .logo {
+    max-width: 40%;
+    margin-bottom: -35px;
+}
+
+header .hero-content .hero-text {
+    max-width: 60%;
+    font-size: 2em;
+    line-height: 1.2;
+    color: #ffffff;
+    font-weight: bold;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+a.book-now {
+    background-color: #D4F553;
+    color: #003A42;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.4em;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    width: 200px;
+    text-align: center
+}
+
+a.book-now:hover,
+a.book-now:focus {
+    background-color: #c4e543;
+    color: #002932;
+    outline: none;
+}
+
+.maze-background {
+    background-image: url('../img/landing/maze.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #ffffff;
+}
+
+.master-of-elements {
+    text-align: center;
+    padding: 80px 0;
+}
+
+.master-of-elements .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.master-of-elements p {
+    color: #555;
+    font-size: 1.2em;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+}
+
+.master-of-elements h2 {
+    color: #003A42;
+    font-size: 3em;
+    font-weight: 700;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    text-transform: none;
+    letter-spacing: normal;
+}
+
+
+.master-of-elements .elements-icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.master-of-elements .element-icon {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    display: block;
+}
+
+.master-of-elements .elements-description {
+    max-width: 800px;
+    margin: 0 auto 50px;
+    font-size: 1.4em;
+}
+
+.master-of-elements .book-now {
+    margin-top: 20px;
+    padding: 20px 40px;
+    font-size: 1.4em;
+}
+
+.iphone-wrapper {
+    position: absolute;
+    top: -100px;
+    /* Adjust this value to move the image up between the sections */
+    right: 15%;
+    /* Center the image horizontally */
+    transform: translateX(-50%);
+    /* Shift the image to the left by half its width for perfect centering */
+    z-index: 10;
+    /* Ensure it's above the other elements */
+}
+
+.iphone-image {
+    width: auto;
+    /* Maintain the original width to height ratio */
+    height: 400px;
+    /* Adjust this to suit the size of your actual image */
+    display: block;
+    /* the image should tilt to the left a little */
+    transform: rotate(10deg);
+    /* Remove any extra space below the image */
+}
+
+.about {
+    background-color: #003A42;
+    color: #ffffff;
+    padding: 80px 0;
+    position: relative;
+}
+
+.about .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.about .about-description {
+    text-align: left;
+    max-width: 40%;
+    color: #ffffff;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.about .about-description h4 {
+    color: #D4F553;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    font-weight: 300;
+    font-size: 1em;
+    letter-spacing: 0.1em;
+    line-height: 0;
+}
+
+.about .about-description h2 {
+    font-size: 3.5em;
+    margin: 0;
+}
+
+.about .about-description p {
+    font-size: 1.3em;
+    margin: 0;
+    font-weight: normal;
+}
+
+@media (max-width: 768px) {
+    .about .about-description {
+        max-width: 100%;
+    }
+}
+
+.about .about-features {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    gap: 40px;
+}
+
+.about .feature {
+    flex: 1;
+    max-width: 300px;
+    text-align: center;
+    padding: 20px;
+}
+
+.about .feature img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    margin: 0 auto 1em;
+}
+
+.about .feature img.tree {
+    width: 175px;
+    height: 175px;
+}
+
+.about .feature h3 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.about .feature p {
+    font-size: 1em;
+}
+
+.feature .feature-line {
+    height: 3px;
+    width: 60%;
+    background-color: #D984D9;
+    margin: 25px auto;
+}
+
+.testimonials {
+    padding: 80px 0;
+}
+
+.testimonials h2 {
+    color: #333;
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* Two columns of equal width */
+    gap: 100px;
+    /* Space between grid items */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+
+.testimonial-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 1em;
+}
+
+.testimonial-text {
+    font-size: 1.5em;
+    /* Adjusted for better readability */
+    padding: 0 20px;
+}
+
+.testimonial-author {
+    font-size: 1em;
+    color: #FF69B4;
+    margin-top: 0.5em;
+}
+
+/* Remove any styles related to the carousel controls */
