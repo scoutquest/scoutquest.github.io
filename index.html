@@ -142,6 +142,103 @@
       </div>
     </section>
 
+    <section class="faq">
+      <div class="container">
+        <h2>FAQ</h2>
+
+        <div class="faq-item">
+          <button class="faq-question"
+                  onclick="toggleFaq('faq1')">What is Scout Quest?</button>
+          <div class="faq-answer"
+              id="faq1">
+            <p>Scout Quest offers immersive adventures that blend the excitement of escape rooms, geocaching, and scavenger
+              hunts in real-world settings. Expect to embark on a journey filled with intriguing puzzles and clues guiding you
+              to your next destination.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question"
+                  onclick="toggleFaq('faq2')">How do I sign up for a Scout Quest?</button>
+          <div class="faq-answer"
+              id="faq2">
+            <p>Our flagship quest, "Master of the Elements," is currently in testing. <a href="#signup-section">Click
+                here</a> to sign up for updates and be the first to know when registrations open!</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question"
+                  onclick="toggleFaq('faq3')">Where are Scout Quest adventures located?</button>
+          <div class="faq-answer"
+              id="faq3">
+            <p>Each adventure is set in a unique location. "Master of the Elements," for example, unfolds in the scenic Shelby
+              Park in East Nashville, TN.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question"
+                  onclick="toggleFaq('faq4')">Who can join a Scout Quest adventure?</button>
+          <div class="faq-answer"
+              id="faq4">
+            <p>Our adventures are crafted for a broad audience, from puzzle aficionados and thrill-seekers to those looking
+              for a unique team-building experience. Participants typically range from young adults to middle-aged
+              adventurers.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question"
+                  onclick="toggleFaq('faq5')">Do I need any special skills to participate?</button>
+          <div class="faq-answer"
+              id="faq5">
+            <p>Not at all! While our quests are designed to engage your mind and sense of adventure, no prior experience with
+              puzzles or adventure games is required. For "Master of the Elements," be prepared for a walk of up to 3 miles on
+              walking paths.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question"
+                  onclick="toggleFaq('faq6')">What's the duration of an adventure?</button>
+          <div class="faq-answer"
+              id="faq6">
+            <p>Adventure lengths can vary. "Master of the Elements" is designed to last approximately 3 hours.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question"
+                  onclick="toggleFaq('faq7')">What's the ideal team size for a Scout Quest?</button>
+          <div class="faq-answer"
+              id="faq7">
+            <p>We recommend teams of at least 3 players for the optimal experience, though smaller teams are welcome.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question"
+                  onclick="toggleFaq('faq8')">Will we be playing alongside other teams?</button>
+          <div class="faq-answer"
+              id="faq8">
+            <p>Yes, other teams will be participating simultaneously, but each team's experience is independent.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question"
+                  onclick="toggleFaq('faq9')">What should I bring on an adventure?</button>
+          <div class="faq-answer"
+              id="faq9">
+            <p>A water bottle is essential for your journey. We'll provide you with a bag, notebook, and pen to assist in your
+              quest.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
     <section class="signup-section" id="signup-section">
       <div class="container">
         <h2>Be the first to know when sign-ups open!</h2>
@@ -191,12 +288,22 @@
           </form>
       </div>
     </section>
-
-
   </div>
 </body>
 
 <script id="mcjs">!function(c,h,i,m,p){m = c.createElement(h), p = c.getElementsByTagName(h)[0], m.async = 1, m.src = i, p.parentNode.insertBefore(m, p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/4e0ceb6f9c65a41e574c4d38d/941c03b305703c23eb3a8c67d.js");</script>
+
+<script>
+  function toggleFaq(id) {
+      var answer = document.getElementById(id);
+      if (answer.classList.contains('active')) {
+        answer.classList.remove('active');
+      } else {
+        answer.classList.add('active');
+      }
+    }
+
+</script>
 
 </html>
 

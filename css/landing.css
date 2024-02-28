@@ -325,6 +325,64 @@ a.book-now:focus {
     margin-top: 0.5em;
 }
 
+.faq {
+    background-color: #003A42;
+    /* Adjust the color to match your screenshot */
+    padding: 2rem;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.faq .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.faq h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+    color: #ffffff;
+}
+
+.faq-item {
+    margin-bottom: 1rem;
+    color: #fff;
+    /* Adjust to match the screenshot */
+    /* border-radius: 8px; */
+    /* Rounded corners if present in the design */
+    border-bottom: 1px solid #FF69B4;
+}
+
+.faq-question {
+    width: 100%;
+    text-align: left;
+    background: transparent;
+    border: none;
+    padding: 1rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #fff;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    /* Light separator line */
+}
+
+.faq-answer {
+    display: none;
+    padding: 15px;
+}
+
+.faq-answer a {
+    color: #FF69B4;
+
+}
+
+/* Style for when the answer is visible */
+.faq-answer.active {
+    display: block;
+}
+
 .signup-section {
     background-color: #003A42;
     /* Dark green background color */
