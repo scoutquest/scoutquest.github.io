@@ -322,6 +322,7 @@ a.book-now:focus {
 .testimonial-author {
     font-size: 1em;
     color: #FF69B4;
+    font-weight: 500;
     margin-top: 0.5em;
 }
 
@@ -366,6 +367,22 @@ a.book-now:focus {
     font-family: 'Quicksand', sans-serif;
     font-weight: 500;
     /* Light separator line */
+}
+
+.faq-question::after {
+    content: '\002B';
+    /* Plus sign */
+    float: right;
+    font-size: 1.5rem;
+    color: #FF69B4;
+    font-weight: 600;
+}
+
+.faq-question[aria-expanded="true"]::after {
+    content: '\2212';
+    color: #FF69B4;
+    font-weight: 600;
+    /* Minus sign */
 }
 
 .faq-answer {
