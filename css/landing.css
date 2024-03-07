@@ -65,30 +65,51 @@ header .hero-content .hero-text {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-a.book-now {
+.button-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.hero-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 16px;
+    font-size: 0.85em;
+    text-decoration: none;
+    border-radius: 40px;
+    margin: 0;
+    transition: all 0.3s ease;
+}
+
+.primary-btn {
+    font-size: 0.85em;
+    text-decoration: none;
+    border-radius: 40px;
     background-color: #D4F553;
     color: #003A42;
     border: none;
-    padding: 15px 30px;
-    font-size: 1.4em;
-    cursor: pointer;
-    text-transform: uppercase;
     font-weight: bold;
-    letter-spacing: 1px;
-    margin-top: 20px;
-    border-radius: 25px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    text-decoration: none;
-    display: inline-block;
-    width: 200px;
-    text-align: center
+    font-family: 'Quicksand', sans-serif;
+    padding: 20px 30px;
+    font-size: 1.4em;
 }
 
-a.book-now:hover,
-a.book-now:focus {
-    background-color: #c4e543;
-    color: #002932;
-    outline: none;
+.secondary-link {
+    background-color: #FF69B4;
+    color: #fff;
+    border: 2px solid #FF69B4;
+    font-weight: normal;
+}
+.primary-btn:hover,
+.secondary-link:hover,
+.primary-btn:focus,
+.secondary-link:focus {
+    cursor: pointer;
 }
 
 .maze-background {
@@ -152,33 +173,25 @@ a.book-now:focus {
     font-size: 1.4em;
 }
 
-.master-of-elements .book-now {
+.master-of-elements .primary-btn {
+    max-width: 200px;
+    display: inline-block;
     margin-top: 20px;
-    padding: 20px 40px;
-    font-size: 1.4em;
 }
 
 .iphone-wrapper {
     position: absolute;
     top: -100px;
-    /* Adjust this value to move the image up between the sections */
     right: 15%;
-    /* Center the image horizontally */
     transform: translateX(-50%);
-    /* Shift the image to the left by half its width for perfect centering */
     z-index: 10;
-    /* Ensure it's above the other elements */
 }
 
 .iphone-image {
     width: auto;
-    /* Maintain the original width to height ratio */
     height: 400px;
-    /* Adjust this to suit the size of your actual image */
     display: block;
-    /* the image should tilt to the left a little */
     transform: rotate(10deg);
-    /* Remove any extra space below the image */
 }
 
 .about {
