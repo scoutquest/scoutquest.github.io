@@ -18,8 +18,9 @@
           <button id="submit" onclick="checkCode()">Submit</button>
         </div>
         <div id="reveal">
-          <p>The final step to mastering water is on the Riverview Trail. Use the picture and coordinates below to reel out what you need to prove you've mastered water.</p>
-          <h3>36.1652839, -86.7252635</h3>
+          <p>The final step to mastering water is in the Froggy Bottoms. Use the picture and coordinates below to reel out what
+            you need to prove you've mastered water.</p>
+          <h3>36.167610, -86.718001</h3>,
           <img id="tree" src="../images/WaterClue3-4CX323PA.png" alt="">
         </div>
       </div>
@@ -31,7 +32,7 @@
   function checkCode(){
     let code = document.getElementById("water-code").value
 
-    if(code.toLowerCase() == 'riverview'){
+    if(code.toLowerCase() == 'froggy'){
       document.getElementById("reveal").style.display = 'block';
       document.getElementById("water-form").style.display = 'none';
     } else {
