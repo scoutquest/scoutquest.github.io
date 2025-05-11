@@ -7,5 +7,10 @@
     {
         "id": "quest_element_2024",
         "name": "Master of the Elements II"
+    },
+    {
+        "id": "quest_bicentennial_P2TTzMcei",
+        "name": "Time's Running Out",
+        "clueFile": "http://scoutquest.co/quests/bicentennial/clues.json"
     }
 ]
