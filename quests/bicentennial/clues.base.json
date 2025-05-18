@@ -9,7 +9,7 @@
     "secretCode": "fisk",
     "secretText": "/MusicCitysForgottenStars.html",
     "audio": null,
-    "image": ""
+    "image": null
   },
   {
     "id": "EOF",
@@ -28,7 +28,8 @@
       "Raccoon",
       "Limestone"
     ],
+    "shortText": "Arrange the symbols correctly to decode their secret.",
     "audio": null,
-    "image": ""
+    "image": null
   }
 ]

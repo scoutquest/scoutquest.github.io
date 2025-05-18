@@ -9,7 +9,7 @@
     "secretCode": "fisk",
     "secretText": "<h2>Fisk Jubilee Singers</h2>\n<img\n\tsrc=\"http://scoutquest.co/quests/elements/images/WaterClue3-4CX323PA.png\"\n/>\n<p>\n\tFormed in the late 1860s at Nashville’s Fisk University, this vocal ensemble\n\ttook spirituals beyond Tennessee and introduced them to audiences worldwide.\n\tTheir groundbreaking tours funded the university’s mission to educate people\n\tnewly freed from enslavement—and, as legend has it, upon playing for the Queen\n\tof England, the queen stated the Fisk Jubilee Singers must come from a \\\"City\n\tof Music.\\\" More than 150 years later, the Fisk Jubilee Singers continue to\n\tperform, preserving their stirring harmonies and sustaining the tradition that\n\tfirst placed Nashville on the global music map.\n</p>\n<img\n\tsrc=\"http://scoutquest.co/quests/elements/images/WaterClue3-4CX323PA.png\"\n/>\n",
     "audio": null,
-    "image": ""
+    "image": null
   },
   {
     "id": "EOF",
@@ -28,7 +28,8 @@
       "Raccoon",
       "Limestone"
     ],
+    "shortText": "Arrange the symbols correctly to decode their secret.",
     "audio": null,
-    "image": ""
+    "image": null
   }
 ]
