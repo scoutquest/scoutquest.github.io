@@ -4,33 +4,57 @@
     "code": "MCFS",
     "label": "Music City's Forgotten Stars",
     "type": "Text Clue",
-    "category": "",
-    "text": "Who first brought Nashville's music to the world?",
-    "secretCode": "fisk",
-    "secretText": "/MusicCitysForgottenStars.html",
-    "audio": null,
-    "image": null
+    "steps": [
+      {
+        "step": 1,
+        "type": "Text Clue",
+        "text": "Who first brought Nashville's music to the world?",
+        "secretCode": "fisk",
+        "audio": null,
+        "image": null
+      },
+      {
+        "step": 2,
+        "type": "HTMLClue",
+        "text": "/MusicCitysForgottenStars.html"
+      }
+    ]
   },
   {
     "id": "EOF",
     "code": "EOF",
     "label": "Essence of Tennessee",
     "type": "Text Clue",
-    "category": "",
-    "text": "These eight symbols capture the essence of Tennessee, from resilient flowers and towering trees to tenacious wildlife and the very rock beneath our feet. Find where they stand in full display and note their order. Arrange them correctly to decode their secret to preserve Tennessee’s legacy.",
-    "correctOrder": [
-      "Eastern Red Cedar",
-      "Bluetick Coonhound",
-      "Channel Catfish",
-      "Iris",
-      "Tulip Poplar",
-      "Mockingbird",
-      "Raccoon",
-      "Limestone"
-    ],
-    "shortText": "Arrange the symbols correctly to decode their secret.",
-    "secretText": "/EssenceOfTennessee.html",
-    "audio": null,
-    "image": null
+    "steps": [
+      {
+        "step": 1,
+        "type": "DragAndDropClue",
+        "text": "These eight symbols capture the essence of Tennessee, from resilient flowers and towering trees to tenacious wildlife and the very rock beneath our feet. Find where they stand in full display and note their order. Arrange them correctly to decode their secret to preserve Tennessee’s legacy.",
+        "correctOrder": [
+          "Eastern Red Cedar",
+          "Bluetick Coonhound",
+          "Channel Catfish",
+          "Iris",
+          "Tulip Poplar",
+          "Mockingbird",
+          "Raccoon",
+          "Limestone"
+        ],
+        "shortText": "Arrange the symbols correctly to decode their secret.",
+        "audio": null,
+        "image": null
+      },
+      {
+        "step": 2,
+        "type": "SecretCodeClue",
+        "text": "/EssenceOfTennessee.html",
+        "secretCode": "archive"
+      },
+      {
+        "step": 3,
+        "type": "SuccessClue",
+        "text": "TODO words about archiving being important"
+      }
+    ]
   }
 ]

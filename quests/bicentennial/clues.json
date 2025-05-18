@@ -4,33 +4,57 @@
     "code": "MCFS",
     "label": "Music City's Forgotten Stars",
     "type": "Text Clue",
-    "category": "",
-    "text": "Who first brought Nashville's music to the world?",
-    "secretCode": "fisk",
-    "secretText": "<h2>Fisk Jubilee Singers</h2>\n<img\n\tsrc=\"http://scoutquest.co/quests/elements/images/WaterClue3-4CX323PA.png\"\n/>\n<p>\n\tFormed in the late 1860s at Nashville’s Fisk University, this vocal ensemble\n\ttook spirituals beyond Tennessee and introduced them to audiences worldwide.\n\tTheir groundbreaking tours funded the university’s mission to educate people\n\tnewly freed from enslavement—and, as legend has it, upon playing for the Queen\n\tof England, the queen stated the Fisk Jubilee Singers must come from a \\\"City\n\tof Music.\\\" More than 150 years later, the Fisk Jubilee Singers continue to\n\tperform, preserving their stirring harmonies and sustaining the tradition that\n\tfirst placed Nashville on the global music map.\n</p>\n<img\n\tsrc=\"http://scoutquest.co/quests/elements/images/WaterClue3-4CX323PA.png\"\n/>\n",
-    "audio": null,
-    "image": null
+    "steps": [
+      {
+        "step": 1,
+        "type": "Text Clue",
+        "text": "Who first brought Nashville's music to the world?",
+        "secretCode": "fisk",
+        "audio": null,
+        "image": null
+      },
+      {
+        "step": 2,
+        "type": "HTMLClue",
+        "text": "/MusicCitysForgottenStars.html"
+      }
+    ]
   },
   {
     "id": "EOF",
     "code": "EOF",
     "label": "Essence of Tennessee",
     "type": "Text Clue",
-    "category": "",
-    "text": "These eight symbols capture the essence of Tennessee, from resilient flowers and towering trees to tenacious wildlife and the very rock beneath our feet. Find where they stand in full display and note their order. Arrange them correctly to decode their secret to preserve Tennessee’s legacy.",
-    "correctOrder": [
-      "Eastern Red Cedar",
-      "Bluetick Coonhound",
-      "Channel Catfish",
-      "Iris",
-      "Tulip Poplar",
-      "Mockingbird",
-      "Raccoon",
-      "Limestone"
-    ],
-    "shortText": "Arrange the symbols correctly to decode their secret.",
-    "secretText": "<h2>Essence Of Tennessee</h2>\n\n<h3>Well done!</h3>\n\n<p>You’ve uncovered the proper order of Tennessee’s emblems.</p>\n\n<p>Use the key below to decode the secret to preserving Tennessee’s legacy.</p>\n<img src=\"http://scoutquest.co/quests/bicentennial/images/EOT.png\" />\n",
-    "audio": null,
-    "image": null
+    "steps": [
+      {
+        "step": 1,
+        "type": "DragAndDropClue",
+        "text": "These eight symbols capture the essence of Tennessee, from resilient flowers and towering trees to tenacious wildlife and the very rock beneath our feet. Find where they stand in full display and note their order. Arrange them correctly to decode their secret to preserve Tennessee’s legacy.",
+        "correctOrder": [
+          "Eastern Red Cedar",
+          "Bluetick Coonhound",
+          "Channel Catfish",
+          "Iris",
+          "Tulip Poplar",
+          "Mockingbird",
+          "Raccoon",
+          "Limestone"
+        ],
+        "shortText": "Arrange the symbols correctly to decode their secret.",
+        "audio": null,
+        "image": null
+      },
+      {
+        "step": 2,
+        "type": "SecretCodeClue",
+        "text": "/EssenceOfTennessee.html",
+        "secretCode": "archive"
+      },
+      {
+        "step": 3,
+        "type": "SuccessClue",
+        "text": "TODO words about archiving being important"
+      }
+    ]
   }
 ]
