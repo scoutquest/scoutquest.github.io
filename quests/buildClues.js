@@ -14,11 +14,17 @@ const htmlDir = join(baseDir, "html");
 const raw = readFileSync(join(baseDir, "clues.base.json"), "utf8");
 const clues = JSON.parse(raw);
 
-// 2) Inline each HTML snippet from the `html/` folder
+// 2) Inline each HTML snippet from the `html/` folder for any step.text
 clues.forEach((clue) => {
-	if (clue.secretText && clue.secretText.endsWith(".html")) {
-		const htmlPath = join(htmlDir, clue.secretText);
-		clue.secretText = readFileSync(htmlPath, "utf8");
+	if (Array.isArray(clue.steps)) {
+		clue.steps.forEach((step) => {
+			if (step.text && step.text.trim().toLowerCase().endsWith(".html")) {
+				// strip any leading slash so join() doesn’t think it’s absolute
+				const relPath = step.text.replace(/^\/+/, "");
+				const htmlPath = join(htmlDir, relPath);
+				step.text = readFileSync(htmlPath, "utf8");
+			}
+		});
 	}
 });
 
