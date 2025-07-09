@@ -56,5 +56,26 @@
         "text": "TODO words about archiving being important"
       }
     ]
+  },
+  {
+    "id": "FTT",
+    "code": "FTT",
+    "label": "Flowing Through Tennessee",
+    "type": "Text Clue",
+    "steps": [
+      {
+        "step": 1,
+        "type": "Text Clue",
+        "text": "Find the park’s tribute to the 31 rivers that carved Tennessee’s story. Locate each river in the puzzle, then look closely between their paths for a hidden phrase revealing why these waters flow so deeply in the state’s heritage.",
+        "secretCode": "united by waterways",
+        "audio": null,
+        "image": null
+      },
+      {
+        "step": 2,
+        "type": "Text Clue",
+        "text": "SUCCESS"
+      }
+    ]
   }
 ]
