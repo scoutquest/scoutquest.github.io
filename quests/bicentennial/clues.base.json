@@ -1,7 +1,7 @@
 [
   {
     "id": "MCFS",
-    "code": "MCFS",
+    "code": "MCFS-QMtrDo7AG",
     "label": "Music City's Forgotten Stars",
     "type": "Text Clue",
     "steps": [
@@ -22,7 +22,7 @@
   },
   {
     "id": "EOF",
-    "code": "EOF",
+    "code": "EOF-gUhj9DzU9",
     "label": "Essence of Tennessee",
     "type": "Text Clue",
     "steps": [
@@ -53,13 +53,13 @@
       {
         "step": 3,
         "type": "SuccessClue",
-        "text": "TODO words about archiving being important"
+        "text": "/EssenceOfTennessee2.html"
       }
     ]
   },
   {
     "id": "FTT",
-    "code": "FTT",
+    "code": "FTT-vvMLUHD4X",
     "label": "Flowing Through Tennessee",
     "type": "Text Clue",
     "steps": [
@@ -74,7 +74,7 @@
       {
         "step": 2,
         "type": "Text Clue",
-        "text": "SUCCESS"
+        "text": "/FlowingThroughTennessee.html"
       }
     ]
   }

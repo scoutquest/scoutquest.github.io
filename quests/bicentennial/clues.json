@@ -1,7 +1,7 @@
 [
   {
     "id": "MCFS",
-    "code": "MCFS",
+    "code": "MCFS-QMtrDo7AG",
     "label": "Music City's Forgotten Stars",
     "type": "Text Clue",
     "steps": [
@@ -16,13 +16,13 @@
       {
         "step": 2,
         "type": "HTMLClue",
-        "text": "<h2>Fisk Jubilee Singers</h2>\n<img\n\tsrc=\"http://scoutquest.co/quests/elements/images/WaterClue3-4CX323PA.png\"\n/>\n<p>\n\tFormed in the late 1860s at Nashville’s Fisk University, this vocal ensemble\n\ttook spirituals beyond Tennessee and introduced them to audiences worldwide.\n\tTheir groundbreaking tours funded the university’s mission to educate people\n\tnewly freed from enslavement—and, as legend has it, upon playing for the Queen\n\tof England, the queen stated the Fisk Jubilee Singers must come from a \\\"City\n\tof Music.\\\" More than 150 years later, the Fisk Jubilee Singers continue to\n\tperform, preserving their stirring harmonies and sustaining the tradition that\n\tfirst placed Nashville on the global music map.\n</p>\n<img\n\tsrc=\"http://scoutquest.co/quests/elements/images/WaterClue3-4CX323PA.png\"\n/>\n"
+        "text": "<h3>Who first brought Nashville's music to the world?</h3>\n\n<h2>Fisk Jubilee Singers</h2>\n<img\n  src=\"http://scoutquest.co/quests/elements/images/WaterClue3-4CX323PA.png\"\n/>\n<p>\n  Formed in the late 1860s at Nashville’s Fisk University, this vocal ensemble\n  took spirituals beyond Tennessee and introduced them to audiences worldwide.\n  Their groundbreaking tours funded the university’s mission to educate people\n  newly freed from enslavement—and, as legend has it, upon playing for the Queen\n  of England, the queen stated the Fisk Jubilee Singers must come from a \\\"City\n  of Music.\\\" More than 150 years later, the Fisk Jubilee Singers continue to\n  perform, preserving their stirring harmonies and sustaining the tradition that\n  first placed Nashville on the global music map.\n</p>\n<img\n  src=\"http://scoutquest.co/quests/elements/images/WaterClue3-4CX323PA.png\"\n/>\n"
       }
     ]
   },
   {
     "id": "EOF",
-    "code": "EOF",
+    "code": "EOF-gUhj9DzU9",
     "label": "Essence of Tennessee",
     "type": "Text Clue",
     "steps": [
@@ -53,13 +53,13 @@
       {
         "step": 3,
         "type": "SuccessClue",
-        "text": "TODO words about archiving being important"
+        "text": "<h3>What’s the secret to preserving Tennessee’s legacy</h3>\n\n<h2>Archiving!</h2>\n<img\n  src=\"http://scoutquest.co/quests/elements/images/WaterClue3-4CX323PA.png\"\n/>\n<p>\n  You found these eight symbols displayed on the side of the Tennessee State\n  Library & Archives.\n</p>\n\n<p>\n  The Library & Archives collects and preserves books and records of historical,\n  documentary and reference value, and encourages and promotes library\n  development throughout the state. Free and open to the public, the Library &\n  Archives invites you to explore Tennessee’s story through interactive exhibits\n  showcasing the state’s most treasured documents.\n</p>\n"
       }
     ]
   },
   {
     "id": "FTT",
-    "code": "FTT",
+    "code": "FTT-vvMLUHD4X",
     "label": "Flowing Through Tennessee",
     "type": "Text Clue",
     "steps": [
@@ -74,7 +74,7 @@
       {
         "step": 2,
         "type": "Text Clue",
-        "text": "SUCCESS"
+        "text": "<h3>Why do these waters flow so deeply in Tennessee’s heritage?</h3>\n\n<p>UNITED BY WATERWAYS</p>\n\n<p>\n  The paths carved by Tennessee’s rivers have bridged towns, carried commerce,\n  and brought people together for centuries. By rediscovering these waters,\n  you’ve woven another essential thread back into our collective story.\n</p>\n"
       }
     ]
   }
