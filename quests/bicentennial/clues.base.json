@@ -11,6 +11,7 @@
         "type": "Text Clue",
         "text": "Who first brought Nashville's music to the world?",
         "secretCode": "fisk",
+        "shortText": "Find the forgotten stars of Nashville's music history.",
         "audio": null,
         "image": null
       },
@@ -71,6 +72,7 @@
         "type": "Text Clue",
         "text": "Find the park’s tribute to the 31 rivers that carved Tennessee’s story. Locate each river in the puzzle, then look closely between their paths for a hidden phrase revealing why these waters flow so deeply in the state’s heritage.",
         "secretCode": "united by waterways",
+        "shortText": "Discover the tribute to Tennessee's rivers and their significance.",
         "audio": null,
         "image": null
       },
@@ -93,6 +95,7 @@
         "type": "Text Clue",
         "text": "A set of once-grand pillars lie exposed in this park, undone by the very forces they were built to withstand. Find them, uncover why they lost their original home, and reveal a hidden clue about the role they once served at a historic Tennessee landmark.",
         "secretCode": "foundation",
+        "shortText": "Uncover the story behind the exposed pillars and their original purpose.",
         "audio": null,
         "image": null
       },
@@ -115,6 +118,7 @@
         "type": "Text Clue",
         "text": "What lifted Tennessee’s future into the skies?",
         "secretCode": "aviation era",
+        "shortText": "What lifted Tennessee’s future into the skies?",
         "audio": null,
         "image": null
       },
@@ -137,6 +141,7 @@
         "type": "Text Clue",
         "text": "Where did lives once converge?",
         "secretCode": "mcnairy spring",
+        "shortText": "Where did lives once converge?",
         "audio": null,
         "image": null
       },
@@ -159,6 +164,7 @@
         "type": "Text Clue",
         "text": "What brought Tennessee’s 100th birthday celebration to life?",
         "secretCode": "exposition",
+        "shortText": "Discover what brought Tennessee’s 100th birthday celebration to life.",
         "audio": null,
         "image": null
       },
@@ -181,6 +187,7 @@
         "type": "Text Clue",
         "text": "What word connects all of Tennessee?",
         "secretCode": "volunteer",
+        "shortText": "What word connects all of Tennessee?",
         "audio": null,
         "image": null
       },
