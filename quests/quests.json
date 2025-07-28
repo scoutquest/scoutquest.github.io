@@ -10,7 +10,7 @@
     },
     {
         "id": "quest_bicentennial_P2TTzMcei",
-        "clueStatus": "unlocked",
+        "clueStatus": "found",
         "name": "Echoes of Tennessee",
         "clueFile": "http://scoutquest.co/quests/bicentennial/clues.json"
     }
