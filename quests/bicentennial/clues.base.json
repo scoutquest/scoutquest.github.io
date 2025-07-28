@@ -4,6 +4,7 @@
     "code": "MCFS-QMtrDo7AG",
     "label": "Music City's Forgotten Stars",
     "type": "Text Clue",
+    "icon": "music_note",
     "steps": [
       {
         "step": 1,
@@ -25,6 +26,7 @@
     "code": "EOF-gUhj9DzU9",
     "label": "Essence of Tennessee",
     "type": "Text Clue",
+    "icon": "park",
     "steps": [
       {
         "step": 1,
@@ -62,6 +64,7 @@
     "code": "FTT-vvMLUHD4X",
     "label": "Flowing Through Tennessee",
     "type": "Text Clue",
+    "icon": "water",
     "steps": [
       {
         "step": 1,
@@ -75,6 +78,116 @@
         "step": 2,
         "type": "Text Clue",
         "text": "/FlowingThroughTennessee.html"
+      }
+    ]
+  },
+  {
+    "id": "ROTP",
+    "code": "ROTP-3X9Y5Z6AB",
+    "label": "Remnants of the Past",
+    "type": "Text Clue",
+    "icon": "account_balance",
+    "steps": [
+      {
+        "step": 1,
+        "type": "Text Clue",
+        "text": "A set of once-grand pillars lie exposed in this park, undone by the very forces they were built to withstand. Find them, uncover why they lost their original home, and reveal a hidden clue about the role they once served at a historic Tennessee landmark.",
+        "secretCode": "foundation",
+        "audio": null,
+        "image": null
+      },
+      {
+        "step": 2,
+        "type": "Text Clue",
+        "text": "/RemnantsOfThePast.html"
+      }
+    ]
+  },
+  {
+    "id": "SATS",
+    "code": "SATS-3X9Y5Z6AB",
+    "label": "Scattered Across the Skies",
+    "type": "Text Clue",
+    "icon": "flight",
+    "steps": [
+      {
+        "step": 1,
+        "type": "Text Clue",
+        "text": "What lifted Tennessee’s future into the skies?",
+        "secretCode": "aviation era",
+        "audio": null,
+        "image": null
+      },
+      {
+        "step": 2,
+        "type": "Text Clue",
+        "text": "/ScatteredAcrossTheSkies.html"
+      }
+    ]
+  },
+  {
+    "id": "TTT",
+    "code": "TTT-3X9Y5Z6AB",
+    "label": "Tracks Through Time",
+    "type": "Text Clue",
+    "icon": "pets",
+    "steps": [
+      {
+        "step": 1,
+        "type": "Text Clue",
+        "text": "Where did lives once converge?",
+        "secretCode": "mcnairy spring",
+        "audio": null,
+        "image": null
+      },
+      {
+        "step": 2,
+        "type": "Text Clue",
+        "text": "/TracksThroughTime.html"
+      }
+    ]
+  },
+  {
+    "id": "HBD",
+    "code": "HBD-3X9Y5Z6AB",
+    "label": "Happy Birthday, Tennessee!",
+    "type": "Text Clue",
+    "icon": "cake",
+    "steps": [
+      {
+        "step": 1,
+        "type": "Text Clue",
+        "text": "What brought Tennessee’s 100th birthday celebration to life?",
+        "secretCode": "exposition",
+        "audio": null,
+        "image": null
+      },
+      {
+        "step": 2,
+        "type": "Text Clue",
+        "text": "/HappyBirthdayTennessee.html"
+      }
+    ]
+  },
+  {
+    "id": "FYTH",
+    "code": "FYTH-3X9Y5Z6AB",
+    "label": "From Year to Here",
+    "type": "Text Clue",
+    "icon": "calendar_month",
+    "steps": [
+      {
+        "step": 1,
+        "type": "Text Clue",
+        "text": "What word connects all of Tennessee?",
+        "secretCode": "volunteer",
+        "audio": null,
+        "image": null
+      },
+      {
+        "step": 2,
+        "type": "Text Clue",
+        "text": "/FromYearToHere.html"
       }
     ]
   }

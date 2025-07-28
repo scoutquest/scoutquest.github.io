@@ -10,7 +10,8 @@
     },
     {
         "id": "quest_bicentennial_P2TTzMcei",
-        "name": "Time's Running Out",
+        "clueStatus": "unlocked",
+        "name": "Echoes of Tennessee",
         "clueFile": "http://scoutquest.co/quests/bicentennial/clues.json"
     }
 ]

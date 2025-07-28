@@ -4,6 +4,7 @@
     "code": "MCFS-QMtrDo7AG",
     "label": "Music City's Forgotten Stars",
     "type": "Text Clue",
+    "icon": "music_note",
     "steps": [
       {
         "step": 1,
@@ -16,7 +17,7 @@
       {
         "step": 2,
         "type": "HTMLClue",
-        "text": "<h3>Who first brought Nashville's music to the world?</h3>\n\n<h2>Fisk Jubilee Singers</h2>\n<img\n  src=\"http://scoutquest.co/quests/elements/images/WaterClue3-4CX323PA.png\"\n/>\n<p>\n  Formed in the late 1860s at Nashville’s Fisk University, this vocal ensemble\n  took spirituals beyond Tennessee and introduced them to audiences worldwide.\n  Their groundbreaking tours funded the university’s mission to educate people\n  newly freed from enslavement—and, as legend has it, upon playing for the Queen\n  of England, the queen stated the Fisk Jubilee Singers must come from a \\\"City\n  of Music.\\\" More than 150 years later, the Fisk Jubilee Singers continue to\n  perform, preserving their stirring harmonies and sustaining the tradition that\n  first placed Nashville on the global music map.\n</p>\n<img\n  src=\"http://scoutquest.co/quests/elements/images/WaterClue3-4CX323PA.png\"\n/>\n"
+        "text": "<h3>Who first brought Nashville's music to the world?</h3>\n\n<h2>Fisk Jubilee Singers</h2>\n<img src=\"http://scoutquest.co/quests/bicentennial/images/Fisk1800.jpg\" />\n<p>\n  Formed in the late 1860s at Nashville’s Fisk University, this vocal ensemble\n  took spirituals beyond Tennessee and introduced them to audiences worldwide.\n  Their groundbreaking tours funded the university’s mission to educate people\n  newly freed from enslavement—and, as legend has it, upon playing for the Queen\n  of England, the queen stated the Fisk Jubilee Singers must come from a \\\"City\n  of Music.\\\" More than 150 years later, the Fisk Jubilee Singers continue to\n  perform, preserving their stirring harmonies and sustaining the tradition that\n  first placed Nashville on the global music map.\n</p>\n<img src=\"http://scoutquest.co/quests/bicentennial/images/FiskToday.jpg\" />\n"
       }
     ]
   },
@@ -25,6 +26,7 @@
     "code": "EOF-gUhj9DzU9",
     "label": "Essence of Tennessee",
     "type": "Text Clue",
+    "icon": "park",
     "steps": [
       {
         "step": 1,
@@ -53,7 +55,7 @@
       {
         "step": 3,
         "type": "SuccessClue",
-        "text": "<h3>What’s the secret to preserving Tennessee’s legacy</h3>\n\n<h2>Archiving!</h2>\n<img\n  src=\"http://scoutquest.co/quests/elements/images/WaterClue3-4CX323PA.png\"\n/>\n<p>\n  You found these eight symbols displayed on the side of the Tennessee State\n  Library & Archives.\n</p>\n\n<p>\n  The Library & Archives collects and preserves books and records of historical,\n  documentary and reference value, and encourages and promotes library\n  development throughout the state. Free and open to the public, the Library &\n  Archives invites you to explore Tennessee’s story through interactive exhibits\n  showcasing the state’s most treasured documents.\n</p>\n"
+        "text": "<h3>What’s the secret to preserving Tennessee’s legacy</h3>\n\n<h2>Archiving!</h2>\n<img\n  src=\"http://scoutquest.co/quests/bicentennial/images/ArchiveBuilding.png\"\n/>\n\n<p>\n  The Library & Archives collects and preserves books and records of historical,\n  documentary and reference value, and encourages and promotes library\n  development throughout the state. Free and open to the public, the Library &\n  Archives invites you to explore Tennessee’s story through interactive exhibits\n  showcasing the state’s most treasured documents.\n</p>\n"
       }
     ]
   },
@@ -62,6 +64,7 @@
     "code": "FTT-vvMLUHD4X",
     "label": "Flowing Through Tennessee",
     "type": "Text Clue",
+    "icon": "water",
     "steps": [
       {
         "step": 1,
@@ -74,7 +77,117 @@
       {
         "step": 2,
         "type": "Text Clue",
-        "text": "<h3>Why do these waters flow so deeply in Tennessee’s heritage?</h3>\n\n<p>UNITED BY WATERWAYS</p>\n\n<p>\n  The paths carved by Tennessee’s rivers have bridged towns, carried commerce,\n  and brought people together for centuries. By rediscovering these waters,\n  you’ve woven another essential thread back into our collective story.\n</p>\n"
+        "text": "<h3>Why do these waters flow so deeply in Tennessee’s heritage?</h3>\n\n<p>UNITED BY WATERWAYS</p>\n\n<img src=\"http://scoutquest.co/quests/bicentennial/images/TNRiver.png\" />\n\n<p>\n  The paths carved by Tennessee’s rivers have bridged towns, carried commerce,\n  and brought people together for centuries. By rediscovering these waters,\n  you’ve woven another essential thread back into our collective story.\n</p>\n"
+      }
+    ]
+  },
+  {
+    "id": "ROTP",
+    "code": "ROTP-3X9Y5Z6AB",
+    "label": "Remnants of the Past",
+    "type": "Text Clue",
+    "icon": "account_balance",
+    "steps": [
+      {
+        "step": 1,
+        "type": "Text Clue",
+        "text": "A set of once-grand pillars lie exposed in this park, undone by the very forces they were built to withstand. Find them, uncover why they lost their original home, and reveal a hidden clue about the role they once served at a historic Tennessee landmark.",
+        "secretCode": "foundation",
+        "audio": null,
+        "image": null
+      },
+      {
+        "step": 2,
+        "type": "Text Clue",
+        "text": "<h3>What role did these once grand pillars play?</h3>\n\n<h2>FOUNDATION</h2>\n\n<img src=\"http://scoutquest.co/quests/bicentennial/images/capitol.jpg\" />\n\n<p>\n  These worn pillars once held up more than stone—they carried the weight of a\n  growing state. By tracing their history and the forces that shaped their\n  downfall, you’ve uncovered the forgotten groundwork of Tennessee’s Capitol.\n  Even in ruin, they remind us what strong foundations can endure.\n</p>\n"
+      }
+    ]
+  },
+  {
+    "id": "SATS",
+    "code": "SATS-3X9Y5Z6AB",
+    "label": "Scattered Across the Skies",
+    "type": "Text Clue",
+    "icon": "flight",
+    "steps": [
+      {
+        "step": 1,
+        "type": "Text Clue",
+        "text": "What lifted Tennessee’s future into the skies?",
+        "secretCode": "aviation era",
+        "audio": null,
+        "image": null
+      },
+      {
+        "step": 2,
+        "type": "Text Clue",
+        "text": "<h3>What lifted Tennessee’s future into the skies?</h3>\n\n<h2>AVAIATION ERA</h2>\n\n<img src=\"http://scoutquest.co/quests/bicentennial/images/plane.jpg\" />\n\n<p>\n  From dirt runways to global hubs, Tennessee’s Aviation Era transformed how\n  people and goods moved across the state. The echoes of this airborne expansion\n  still shape our world today—though many of its airfields have vanished from\n  the map, you’ve brought this high-flying legacy back into view.\n</p>\n"
+      }
+    ]
+  },
+  {
+    "id": "TTT",
+    "code": "TTT-3X9Y5Z6AB",
+    "label": "Tracks Through Time",
+    "type": "Text Clue",
+    "icon": "pets",
+    "steps": [
+      {
+        "step": 1,
+        "type": "Text Clue",
+        "text": "Where did lives once converge?",
+        "secretCode": "mcnairy spring",
+        "audio": null,
+        "image": null
+      },
+      {
+        "step": 2,
+        "type": "Text Clue",
+        "text": "<h3>Where did lives once converge?</h3>\n\n<h2>McNAIRY SPRING</h2>\n\n<img src=\"http://scoutquest.co/quests/bicentennial/images/mcnairy.jpg\" />\n\n<p>\n  This natural spring has drawn life to this spot for centuries. Long before\n  Nashville became a city—or Tennessee a state—people and animals alike gathered\n  here. Its steady waters made it a vital meeting place, a source of sustenance,\n  and ultimately the reason this location was chosen as the state’s capital.\n  Though the spring is now hidden, its legacy continues to shape the land and\n  the stories we remember.\n</p>\n"
+      }
+    ]
+  },
+  {
+    "id": "HBD",
+    "code": "HBD-3X9Y5Z6AB",
+    "label": "Happy Birthday, Tennessee!",
+    "type": "Text Clue",
+    "icon": "cake",
+    "steps": [
+      {
+        "step": 1,
+        "type": "Text Clue",
+        "text": "What brought Tennessee’s 100th birthday celebration to life?",
+        "secretCode": "exposition",
+        "audio": null,
+        "image": null
+      },
+      {
+        "step": 2,
+        "type": "Text Clue",
+        "text": "<h3>What brought Tennessee’s 100th birthday celebration to life?</h3>\n\n<h2>EXPOSITION</h2>\n\n<img src=\"http://scoutquest.co/quests/bicentennial/images/parthenon.jpg\" />\n\n<p>\n  Held in 1897, the Tennessee Centennial Exposition was a grand celebration of\n  the state’s first hundred years. Thousands came to Nashville to see new\n  inventions, listen to music, and walk the elaborate fairgrounds. The event\n  left behind more than memories—it gave the city its full-scale Parthenon and\n  helped shape its future as a cultural capital.\n</p>\n"
+      }
+    ]
+  },
+  {
+    "id": "FYTH",
+    "code": "FYTH-3X9Y5Z6AB",
+    "label": "From Year to Here",
+    "type": "Text Clue",
+    "icon": "calendar_month",
+    "steps": [
+      {
+        "step": 1,
+        "type": "Text Clue",
+        "text": "What word connects all of Tennessee?",
+        "secretCode": "volunteer",
+        "audio": null,
+        "image": null
+      },
+      {
+        "step": 2,
+        "type": "Text Clue",
+        "text": "<h3>What word connects all of Tennessee?</h3>\n\n<h2>VOLUNTEER</h2>\n\n<img src=\"http://scoutquest.co/quests/bicentennial/images/flag.jpg\" />\n\n<p>\n  The Volunteer State.<br />\n  Tennessee earned its nickname during the War of 1812, when an overwhelming\n  number of Tennesseans volunteered to join the fight—so many, in fact, that the\n  name stuck. That spirit of service didn’t stop there. From the\n  Mexican-American War to moments of disaster relief and civic duty, Tennesseans\n  have consistently stepped forward when called. “Volunteer” isn’t just a\n  name—it’s a legacy of commitment, pride, and readiness to serve that continues\n  to define the state today.\n</p>\n"
       }
     ]
   }
