@@ -51,7 +51,7 @@
         "step": 2,
         "type": "SecretCodeClue",
         "text": "<h2>Essence Of Tennessee</h2>\n\n<h3>Well done!</h3>\n\n<p>You’ve uncovered the proper order of Tennessee’s emblems.</p>\n\n<p>Use the key below to decode the secret to preserving Tennessee’s legacy.</p>\n<img src=\"http://scoutquest.co/quests/bicentennial/images/EOT.png\" />\n",
-        "secretCode": "archive"
+        "secretCode": "archives"
       },
       {
         "step": 3,

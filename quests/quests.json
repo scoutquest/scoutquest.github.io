@@ -14,6 +14,6 @@
         "name": "Echoes of Tennessee",
         "clueFile": "http://scoutquest.co/quests/bicentennial/clues.json",
         "welcomeHtml": "<h1>Echoes of Tennessee</h1><h2><em>A Quest to Restore the Timeline</em></h2><p>Key moments in Tennessee’s history are disappearing from our collective memory— and Bicentennial Park holds the clues to restore them. Search the grounds, solve the puzzles, and save Tennessee’s story before it slips away completely.</p><h3>Ready to begin? Tap “Start Quest” to start the clock—then open your box of clues and let the quest begin!</h3>",
-        "completionHtml": "<h1>You Did It!</h1><h3>Congratulations, you’ve completed the Echoes of Tennessee quest!<br/> You’ve uncovered key moments in our state’s history and helped preserve Tennessee’s story for future generations.</h3>"
+        "completionHtml": "<h1>You Did It!</h1><h3>Congratulations, you’ve completed the Echoes of Tennessee quest!<br/><br/> You’ve uncovered key moments in the state's history and helped preserve Tennessee’s story for future generations.</h3>"
     }
 ]
