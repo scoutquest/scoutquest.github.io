@@ -50,13 +50,14 @@
       {
         "step": 2,
         "type": "SecretCodeClue",
+        "shortText": "What’s the secret to preserving Tennessee’s legacy?",
         "text": "<h2>Essence Of Tennessee</h2>\n\n<h3>Well done!</h3>\n\n<p>You’ve uncovered the proper order of Tennessee’s emblems.</p>\n\n<p>Use the key below to decode the secret to preserving Tennessee’s legacy.</p>\n<img src=\"http://scoutquest.co/quests/bicentennial/images/EOT.png\" />\n",
         "secretCode": "archives"
       },
       {
         "step": 3,
         "type": "SuccessClue",
-        "text": "<h3>What’s the secret to preserving Tennessee’s legacy</h3>\n\n<h2>Archiving!</h2>\n<img\n  src=\"http://scoutquest.co/quests/bicentennial/images/ArchiveBuilding.jpg\"\n/>\n\n<p>\n  The Library & Archives collects and preserves books and records of historical,\n  documentary and reference value, and encourages and promotes library\n  development throughout the state. Free and open to the public, the Library &\n  Archives invites you to explore Tennessee’s story through interactive exhibits\n  showcasing the state’s most treasured documents.\n</p>\n"
+        "text": "<h3>What’s the secret to preserving Tennessee’s legacy?</h3>\n\n<h2>Archiving!</h2>\n<img\n  src=\"http://scoutquest.co/quests/bicentennial/images/ArchiveBuilding.jpg\"\n/>\n\n<p>\n  The Library & Archives collects and preserves books and records of historical,\n  documentary and reference value, and encourages and promotes library\n  development throughout the state. Free and open to the public, the Library &\n  Archives invites you to explore Tennessee’s story through interactive exhibits\n  showcasing the state’s most treasured documents.\n</p>\n"
       }
     ]
   },

@@ -50,6 +50,7 @@
       {
         "step": 2,
         "type": "SecretCodeClue",
+        "shortText": "What’s the secret to preserving Tennessee’s legacy?",
         "text": "/EssenceOfTennessee.html",
         "secretCode": "archives"
       },
