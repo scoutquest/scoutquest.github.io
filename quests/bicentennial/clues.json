@@ -56,7 +56,7 @@
       {
         "step": 3,
         "type": "SuccessClue",
-        "text": "<h3>What’s the secret to preserving Tennessee’s legacy</h3>\n\n<h2>Archiving!</h2>\n<img\n  src=\"http://scoutquest.co/quests/bicentennial/images/ArchiveBuilding.png\"\n/>\n\n<p>\n  The Library & Archives collects and preserves books and records of historical,\n  documentary and reference value, and encourages and promotes library\n  development throughout the state. Free and open to the public, the Library &\n  Archives invites you to explore Tennessee’s story through interactive exhibits\n  showcasing the state’s most treasured documents.\n</p>\n"
+        "text": "<h3>What’s the secret to preserving Tennessee’s legacy</h3>\n\n<h2>Archiving!</h2>\n<img\n  src=\"http://scoutquest.co/quests/bicentennial/images/ArchiveBuilding.jpg\"\n/>\n\n<p>\n  The Library & Archives collects and preserves books and records of historical,\n  documentary and reference value, and encourages and promotes library\n  development throughout the state. Free and open to the public, the Library &\n  Archives invites you to explore Tennessee’s story through interactive exhibits\n  showcasing the state’s most treasured documents.\n</p>\n"
       }
     ]
   },
@@ -79,7 +79,7 @@
       {
         "step": 2,
         "type": "Text Clue",
-        "text": "<h3>Why do these waters flow so deeply in Tennessee’s heritage?</h3>\n\n<p>UNITED BY WATERWAYS</p>\n\n<img src=\"http://scoutquest.co/quests/bicentennial/images/TNRiver.png\" />\n\n<p>\n  The paths carved by Tennessee’s rivers have bridged towns, carried commerce,\n  and brought people together for centuries. By rediscovering these waters,\n  you’ve woven another essential thread back into our collective story.\n</p>\n"
+        "text": "<h3>Why do these waters flow so deeply in Tennessee’s heritage?</h3>\n\n<p>UNITED BY WATERWAYS</p>\n\n<img src=\"http://scoutquest.co/quests/bicentennial/images/TNRiver.jpg\" />\n\n<p>\n  The paths carved by Tennessee’s rivers have bridged towns, carried commerce,\n  and brought people together for centuries. By rediscovering these waters,\n  you’ve woven another essential thread back into our collective story.\n</p>\n"
       }
     ]
   },
@@ -125,7 +125,7 @@
       {
         "step": 2,
         "type": "Text Clue",
-        "text": "<h3>What lifted Tennessee’s future into the skies?</h3>\n\n<h2>AVAIATION ERA</h2>\n\n<img src=\"http://scoutquest.co/quests/bicentennial/images/plane.jpg\" />\n\n<p>\n  From dirt runways to global hubs, Tennessee’s Aviation Era transformed how\n  people and goods moved across the state. The echoes of this airborne expansion\n  still shape our world today—though many of its airfields have vanished from\n  the map, you’ve brought this high-flying legacy back into view.\n</p>\n"
+        "text": "<h3>What lifted Tennessee’s future into the skies?</h3>\n\n<h2>AVIATION ERA</h2>\n\n<img src=\"http://scoutquest.co/quests/bicentennial/images/plane.jpg\" />\n\n<p>\n  From dirt runways to global hubs, Tennessee’s Aviation Era transformed how\n  people and goods moved across the state. The echoes of this airborne expansion\n  still shape our world today—though many of its airfields have vanished from\n  the map, you’ve brought this high-flying legacy back into view.\n</p>\n"
       }
     ]
   },
@@ -171,7 +171,7 @@
       {
         "step": 2,
         "type": "Text Clue",
-        "text": "<h3>What brought Tennessee’s 100th birthday celebration to life?</h3>\n\n<h2>EXPOSITION</h2>\n\n<img src=\"http://scoutquest.co/quests/bicentennial/images/parthenon.jpg\" />\n\n<p>\n  Held in 1897, the Tennessee Centennial Exposition was a grand celebration of\n  the state’s first hundred years. Thousands came to Nashville to see new\n  inventions, listen to music, and walk the elaborate fairgrounds. The event\n  left behind more than memories—it gave the city its full-scale Parthenon and\n  helped shape its future as a cultural capital.\n</p>\n"
+        "text": "<h3>What brought Tennessee’s 100th birthday celebration to life?</h3>\n\n<h2>EXPOSITION</h2>\n\n<img src=\"http://scoutquest.co/quests/bicentennial/images/parthenon.png\" />\n\n<p>\n  Held in 1897, the Tennessee Centennial Exposition was a grand celebration of\n  the state’s first hundred years. Thousands came to Nashville to see new\n  inventions, listen to music, and walk the elaborate fairgrounds. The event\n  left behind more than memories—it gave the city its full-scale Parthenon and\n  helped shape its future as a cultural capital.\n</p>\n"
       }
     ]
   },
