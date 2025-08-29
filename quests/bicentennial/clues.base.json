@@ -16,28 +16,32 @@
         "image": null,
         "hints": [
           {
+            "id": "MCFS-hint-1",
             "order": 1,
             "preview": "Where do I go?",
             "text": "Find the tributes in the Court of 3 Stars.",
             "minutePenalty": 5
           },
           {
+            "id": "MCFS-hint-2",
             "order": 2,
             "preview": "What do I look for?",
             "text": "Find Dolly Parton, Tina Turner, Elvis Presley, Johnny Cash tributes.",
             "minutePenalty": 10
           },
           {
+            "id": "MCFS-hint-3",
             "order": 3,
             "preview": "I’ve found the tributes, now what?",
             "text": "Use the circular key on the last page to get the 4 letter answer.",
             "minutePenalty": 15
           },
           {
+            "id": "MCFS-hint-4",
             "order": 4,
             "preview": "I give up! What's the answer?",
             "text": "The answer is FISK.",
-            "minutePenalty": 20
+            "minutePenalty": 25
           }
         ]
       },
