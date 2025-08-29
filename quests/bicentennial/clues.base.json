@@ -13,7 +13,33 @@
         "secretCode": "fisk",
         "shortText": "Find the forgotten stars of Nashville's music history.",
         "audio": null,
-        "image": null
+        "image": null,
+        "hints": [
+          {
+            "order": 1,
+            "preview": "Where do I go?",
+            "text": "Find the tributes in the Court of 3 Stars.",
+            "minutePenalty": 5
+          },
+          {
+            "order": 2,
+            "preview": "What do I look for?",
+            "text": "Find Dolly Parton, Tina Turner, Elvis Presley, Johnny Cash tributes.",
+            "minutePenalty": 10
+          },
+          {
+            "order": 3,
+            "preview": "I’ve found the tributes, now what?",
+            "text": "Use the circular key on the last page to get the 4 letter answer.",
+            "minutePenalty": 15
+          },
+          {
+            "order": 4,
+            "preview": "I give up! What's the answer?",
+            "text": "The answer is FISK.",
+            "minutePenalty": 20
+          }
+        ]
       },
       {
         "step": 2,
