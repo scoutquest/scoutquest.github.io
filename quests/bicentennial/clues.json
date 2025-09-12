@@ -448,66 +448,66 @@
               "HBD-hint-2",
               "HBD-hint-3"
             ]
-          },
-          {
-            "step": 2,
-            "type": "Text Clue",
-            "text": "/HappyBirthdayTennessee.html"
           }
         ]
       },
       {
-        "id": "FYTH",
-        "code": "FYTH-3X9Y5Z6AB",
-        "label": "From Year to Here",
+        "step": 2,
         "type": "Text Clue",
-        "icon": "calendar_month",
-        "steps": [
+        "text": "<h3>What brought Tennessee’s 100th birthday celebration to life?</h3>\n\n<h2>EXPOSITION</h2>\n\n<img src=\"http://scoutquest.co/quests/bicentennial/images/parthenon.png\" />\n\n<p>\n  Held in 1897, the Tennessee Centennial Exposition was a grand celebration of\n  the state’s first hundred years. Thousands came to Nashville to see new\n  inventions, listen to music, and walk the elaborate fairgrounds. The event\n  left behind more than memories—it gave the city its full-scale Parthenon and\n  helped shape its future as a cultural capital.\n</p>\n"
+      }
+    ]
+  },
+  {
+    "id": "FYTH",
+    "code": "FYTH-3X9Y5Z6AB",
+    "label": "From Year to Here",
+    "type": "Text Clue",
+    "icon": "calendar_month",
+    "steps": [
+      {
+        "step": 1,
+        "type": "Text Clue",
+        "text": "What word connects all of Tennessee?",
+        "secretCode": "volunteer",
+        "shortText": "What word connects all of Tennessee?",
+        "audio": null,
+        "image": null,
+        "hints": [
           {
-            "step": 1,
-            "type": "Text Clue",
-            "text": "What word connects all of Tennessee?",
-            "secretCode": "volunteer",
-            "shortText": "What word connects all of Tennessee?",
-            "audio": null,
-            "image": null,
-            "hints": [
-              {
-                "id": "FYTH-hint-1",
-                "order": 1,
-                "preview": "Where do I find the answers?",
-                "text": "You can find all of the answers on the Pathway of History.",
-                "minutePenalty": 5
-              },
-              {
-                "id": "FYTH-hint-2",
-                "order": 2,
-                "preview": "I found all of the city answers, now what do I do?",
-                "text": "Unscramble the circled letters in each city.",
-                "minutePenalty": 15,
-                "hintUnlockIds": [
-                  "FYTH-hint-1"
-                ]
-              },
-              {
-                "id": "FYTH-hint-3",
-                "order": 3,
-                "preview": "I can’t figure out the word. What’s the answer?",
-                "text": "The answer is VOLUNTEER.",
-                "minutePenalty": 15,
-                "hintUnlockIds": [
-                  "FYTH-hint-1",
-                  "FYTH-hint-2"
-                ]
-              }
+            "id": "FYTH-hint-1",
+            "order": 1,
+            "preview": "Where do I find the answers?",
+            "text": "You can find all of the answers on the Pathway of History.",
+            "minutePenalty": 5
+          },
+          {
+            "id": "FYTH-hint-2",
+            "order": 2,
+            "preview": "I found all of the city answers, now what do I do?",
+            "text": "Unscramble the circled letters in each city.",
+            "minutePenalty": 15,
+            "hintUnlockIds": [
+              "FYTH-hint-1"
             ]
           },
           {
-            "step": 2,
-            "type": "Text Clue",
-            "text": "/FromYearToHere.html"
+            "id": "FYTH-hint-3",
+            "order": 3,
+            "preview": "I can’t figure out the word. What’s the answer?",
+            "text": "The answer is VOLUNTEER.",
+            "minutePenalty": 15,
+            "hintUnlockIds": [
+              "FYTH-hint-1",
+              "FYTH-hint-2"
+            ]
           }
         ]
+      },
+      {
+        "step": 2,
+        "type": "Text Clue",
+        "text": "<h3>What word connects all of Tennessee?</h3>\n\n<h2>VOLUNTEER</h2>\n\n<img src=\"http://scoutquest.co/quests/bicentennial/images/flag.jpg\" />\n\n<p>\n  The Volunteer State.<br />\n  Tennessee earned its nickname during the War of 1812, when an overwhelming\n  number of Tennesseans volunteered to join the fight—so many, in fact, that the\n  name stuck. That spirit of service didn’t stop there. From the\n  Mexican-American War to moments of disaster relief and civic duty, Tennesseans\n  have consistently stepped forward when called. “Volunteer” isn’t just a\n  name—it’s a legacy of commitment, pride, and readiness to serve that continues\n  to define the state today.\n</p>\n"
       }
     ]
   }

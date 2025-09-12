@@ -448,66 +448,66 @@
               "HBD-hint-2",
               "HBD-hint-3"
             ]
-          },
-          {
-            "step": 2,
-            "type": "Text Clue",
-            "text": "/HappyBirthdayTennessee.html"
           }
         ]
       },
       {
-        "id": "FYTH",
-        "code": "FYTH-3X9Y5Z6AB",
-        "label": "From Year to Here",
+        "step": 2,
         "type": "Text Clue",
-        "icon": "calendar_month",
-        "steps": [
+        "text": "/HappyBirthdayTennessee.html"
+      }
+    ]
+  },
+  {
+    "id": "FYTH",
+    "code": "FYTH-3X9Y5Z6AB",
+    "label": "From Year to Here",
+    "type": "Text Clue",
+    "icon": "calendar_month",
+    "steps": [
+      {
+        "step": 1,
+        "type": "Text Clue",
+        "text": "What word connects all of Tennessee?",
+        "secretCode": "volunteer",
+        "shortText": "What word connects all of Tennessee?",
+        "audio": null,
+        "image": null,
+        "hints": [
           {
-            "step": 1,
-            "type": "Text Clue",
-            "text": "What word connects all of Tennessee?",
-            "secretCode": "volunteer",
-            "shortText": "What word connects all of Tennessee?",
-            "audio": null,
-            "image": null,
-            "hints": [
-              {
-                "id": "FYTH-hint-1",
-                "order": 1,
-                "preview": "Where do I find the answers?",
-                "text": "You can find all of the answers on the Pathway of History.",
-                "minutePenalty": 5
-              },
-              {
-                "id": "FYTH-hint-2",
-                "order": 2,
-                "preview": "I found all of the city answers, now what do I do?",
-                "text": "Unscramble the circled letters in each city.",
-                "minutePenalty": 15,
-                "hintUnlockIds": [
-                  "FYTH-hint-1"
-                ]
-              },
-              {
-                "id": "FYTH-hint-3",
-                "order": 3,
-                "preview": "I can’t figure out the word. What’s the answer?",
-                "text": "The answer is VOLUNTEER.",
-                "minutePenalty": 15,
-                "hintUnlockIds": [
-                  "FYTH-hint-1",
-                  "FYTH-hint-2"
-                ]
-              }
+            "id": "FYTH-hint-1",
+            "order": 1,
+            "preview": "Where do I find the answers?",
+            "text": "You can find all of the answers on the Pathway of History.",
+            "minutePenalty": 5
+          },
+          {
+            "id": "FYTH-hint-2",
+            "order": 2,
+            "preview": "I found all of the city answers, now what do I do?",
+            "text": "Unscramble the circled letters in each city.",
+            "minutePenalty": 15,
+            "hintUnlockIds": [
+              "FYTH-hint-1"
             ]
           },
           {
-            "step": 2,
-            "type": "Text Clue",
-            "text": "/FromYearToHere.html"
+            "id": "FYTH-hint-3",
+            "order": 3,
+            "preview": "I can’t figure out the word. What’s the answer?",
+            "text": "The answer is VOLUNTEER.",
+            "minutePenalty": 15,
+            "hintUnlockIds": [
+              "FYTH-hint-1",
+              "FYTH-hint-2"
+            ]
           }
         ]
+      },
+      {
+        "step": 2,
+        "type": "Text Clue",
+        "text": "/FromYearToHere.html"
       }
     ]
   }
