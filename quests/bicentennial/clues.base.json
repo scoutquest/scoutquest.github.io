@@ -280,7 +280,7 @@
             "id": "SATS-hint-2",
             "order": 2,
             "preview": "I made the airplane and still can’t read the instructions.",
-            "text": "On the giant Tennessee map, each plane icon marks one of these crucial airports. Collect the letters from each marked square, and unscramble them to reclaim this pivotal chapter in our past.. (Show picture)",
+            "text": "On the giant Tennessee map, each plane icon marks one of these crucial airports. Collect the letters from each marked square, and unscramble them to reclaim this pivotal chapter in our past.",
             "minutePenalty": 10,
             "image": "http://scoutquest.co/quests/elements/images/WaterClue1-oH8AZgEDk.png",
             "hintUnlockIds": [
