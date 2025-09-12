@@ -80,14 +80,71 @@
         ],
         "shortText": "Arrange the symbols correctly to decode their secret.",
         "audio": null,
-        "image": null
+        "image": null,
+        "hints": [
+          {
+            "id": "EOF-hint-1",
+            "order": 1,
+            "preview": "Where do I go?",
+            "text": "Look at the building on the North side of the park.",
+            "minutePenalty": 5
+          },
+          {
+            "id": "EOF-hint-2",
+            "order": 2,
+            "preview": "What do I look for?",
+            "text": "Find the order of the symbols on the side of the Tennessee State Library & Archives building.",
+            "minutePenalty": 15
+          },
+          {
+            "id": "EOF-hint-3",
+            "order": 3,
+            "preview": "I still don’t know the order, what’s the answer?",
+            "text": "The correct order is Eastern Red Cedar, Bluetick Coonhound, Channel Catfish, Iris, Tulip Poplar, Mockingbird, Raccoon, Limestone",
+            "minutePenalty": 10,
+            "hintUnlockIds": [
+              "EOF-hint-1",
+              "EOF-hint-2"
+            ]
+          }
+        ]
       },
       {
         "step": 2,
         "type": "SecretCodeClue",
         "shortText": "What’s the secret to preserving Tennessee’s legacy?",
         "text": "/EssenceOfTennessee.html",
-        "secretCode": "archives"
+        "secretCode": "archives",
+        "hints": [
+          {
+            "id": "EOF-hint-4",
+            "order": 4,
+            "preview": "How do I use the decoder key?",
+            "text": "Compare the borders and dots on the cards to the key.",
+            "minutePenalty": 5
+          },
+          {
+            "id": "EOF-hint-5",
+            "order": 5,
+            "preview": "I still don’t understand.",
+            "text": "The first letter is A because the Eastern Red Cedar has 3 borders and a dot.",
+            "minutePenalty": 15,
+            "hintUnlockIds": [
+              "EOF-hint-4"
+            ]
+          },
+          {
+            "id": "EOF-hint-6",
+            "order": 6,
+            "preview": "I can’t figure it out, what’s the answer?",
+            "text": "The answer is ARCHIVES.",
+            "minutePenalty": 10,
+            "hintUnlockIds": [
+              "EOF-hint-4",
+              "EOF-hint-5"
+            ]
+          }
+        ]
       },
       {
         "step": 3,
@@ -110,7 +167,34 @@
         "secretCode": "united by waterways",
         "shortText": "Discover the tribute to Tennessee's rivers and their significance.",
         "audio": null,
-        "image": null
+        "image": null,
+        "hints": [
+          {
+            "id": "FTT-hint-1",
+            "order": 1,
+            "preview": "Where do I go?",
+            "text": "Find the fountains outside of the visitor’s center. (They’re not always on.)",
+            "minutePenalty": 5
+          },
+          {
+            "id": "FTT-hint-2",
+            "order": 2,
+            "preview": "I’ve found all of the rivers, now what?",
+            "text": "After you find all of the river names in the word search, read the letters that weren’t part of any of the river names.",
+            "minutePenalty": 15
+          },
+          {
+            "id": "FTT-hint-3",
+            "order": 3,
+            "preview": "I can’t figure out the hidden phrase, what’s the answer?",
+            "text": "The answer is UNITED BY WATERWAYS.",
+            "minutePenalty": 15,
+            "hintUnlockIds": [
+              "FTT-hint-1",
+              "FTT-hint-2"
+            ]
+          }
+        ]
       },
       {
         "step": 2,
@@ -133,7 +217,34 @@
         "secretCode": "foundation",
         "shortText": "Uncover the story behind the exposed pillars and their original purpose.",
         "audio": null,
-        "image": null
+        "image": null,
+        "hints": [
+          {
+            "id": "ROTP-hint-1",
+            "order": 1,
+            "preview": "Where do I go?",
+            "text": "Go to the Reliquary and find the answers you need on the informational plaque.",
+            "minutePenalty": 8
+          },
+          {
+            "id": "ROTP-hint-2",
+            "order": 2,
+            "preview": "I can’t find all of the answers!",
+            "text": "Some of the answers are columns, dissolve, erosion.",
+            "minutePenalty": 15
+          },
+          {
+            "id": "ROTP-hint-3",
+            "order": 3,
+            "preview": "I can’t get the final answer, what is it?",
+            "text": "The answer is FOUNDATION.",
+            "minutePenalty": 10,
+            "hintUnlockIds": [
+              "ROTP-hint-1",
+              "ROTP-hint-2"
+            ]
+          }
+        ]
       },
       {
         "step": 2,
@@ -156,7 +267,62 @@
         "secretCode": "aviation era",
         "shortText": "What lifted Tennessee’s future into the skies?",
         "audio": null,
-        "image": null
+        "image": null,
+        "hints": [
+          {
+            "id": "SATS-hint-1",
+            "order": 1,
+            "preview": "I don’t know what I’m supposed to do!",
+            "text": "Fold the piece of paper with the airplane symbol into a paper airplane and follow the instructions on the wings.",
+            "minutePenalty": 7
+          },
+          {
+            "id": "SATS-hint-2",
+            "order": 2,
+            "preview": "I made the airplane and still can’t read the instructions.",
+            "text": "On the giant Tennessee map, each plane icon marks one of these crucial airports. Collect the letters from each marked square, and unscramble them to reclaim this pivotal chapter in our past.. (Show picture)",
+            "minutePenalty": 10,
+            "image": "http://scoutquest.co/quests/elements/images/WaterClue1-oH8AZgEDk.png",
+            "hintUnlockIds": [
+              "SATS-hint-1"
+            ]
+          },
+          {
+            "id": "SATS-hint-3",
+            "order": 3,
+            "preview": "I’ve figured out what the instructions say, but I don’t know where to go!",
+            "text": "Go to the giant Tennessee map in the map plaza.",
+            "minutePenalty": 15
+          },
+          {
+            "id": "SATS-hint-4",
+            "order": 4,
+            "preview": "I’m at the right place, I’ve read the instructions, but I still can’t find what I need!",
+            "text": "Overlay the map grid and letter grid to find correct letters.",
+            "minutePenalty": 20
+          },
+          {
+            "id": "SATS-hint-5",
+            "order": 5,
+            "preview": "I still can’t figure out the letters!",
+            "text": "The letters are A-V-R-T-I-N-O-A-E-A-I",
+            "minutePenalty": 25
+          },
+          {
+            "id": "SATS-hint-6",
+            "order": 6,
+            "preview": "I have the letters, but can’t figure out what they unscramble to, I need the answer.",
+            "text": "The answer is AVIATION ERA",
+            "minutePenalty": 10,
+            "hintUnlockIds": [
+              "SATS-hint-1",
+              "SATS-hint-2",
+              "SATS-hint-3",
+              "SATS-hint-4",
+              "SATS-hint-5"
+            ]
+          }
+        ]
       },
       {
         "step": 2,
@@ -179,7 +345,49 @@
         "secretCode": "mcnairy spring",
         "shortText": "Where did lives once converge?",
         "audio": null,
-        "image": null
+        "image": null,
+        "hints": [
+          {
+            "id": "TTT-hint-1",
+            "order": 1,
+            "preview": "I don’t know what I’m supposed to do!",
+            "text": "You need to use your map to track the animals.",
+            "minutePenalty": 5
+          },
+          {
+            "id": "TTT-hint-2",
+            "order": 2,
+            "preview": "I’m still not sure what to do.",
+            "text": "Connect the animal silhouettes with their footprints.",
+            "minutePenalty": 10,
+            "hintUnlockIds": [
+              "TTT-hint-1"
+            ]
+          },
+          {
+            "id": "TTT-hint-3",
+            "order": 3,
+            "preview": "I’ve connected the animals with their matching footprints and I’m not sure what to do next.",
+            "text": "Go to the place on the map where the tracks cross.",
+            "minutePenalty": 15,
+            "hintUnlockIds": [
+              "TTT-hint-1",
+              "TTT-hint-2"
+            ]
+          },
+          {
+            "id": "TTT-hint-4",
+            "order": 4,
+            "preview": "I can’t figure out where to go, what’s the answer?",
+            "text": "The answer is MCNAIRY SPRING.",
+            "minutePenalty": 10,
+            "hintUnlockIds": [
+              "TTT-hint-1",
+              "TTT-hint-2",
+              "TTT-hint-3"
+            ]
+          }
+        ]
       },
       {
         "step": 2,
@@ -202,35 +410,104 @@
         "secretCode": "exposition",
         "shortText": "Discover what brought Tennessee’s 100th birthday celebration to life.",
         "audio": null,
-        "image": null
+        "image": null,
+        "hints": [
+          {
+            "id": "HBD-hint-1",
+            "order": 1,
+            "preview": "Where do I go?",
+            "text": "Go to the Centennial Memorial.",
+            "minutePenalty": 5
+          },
+          {
+            "id": "HBD-hint-2",
+            "order": 2,
+            "preview": "I need a hint.",
+            "text": "N948 is S.",
+            "minutePenalty": 10
+          },
+          {
+            "id": "HBD-hint-3",
+            "order": 3,
+            "preview": "I need another hint!",
+            "text": "For N948, go to the North plaque, count to the 9th line (excluding the title), the 4th word, and the 8th letter.",
+            "minutePenalty": 15,
+            "hintUnlockIds": [
+              "HBD-hint-1",
+              "HBD-hint-2"
+            ]
+          },
+          {
+            "id": "HBD-hint-4",
+            "order": 4,
+            "preview": "I can’t figure it out, what’s the answer?",
+            "text": "The answer is EXPOSITION.",
+            "minutePenalty": 10,
+            "hintUnlockIds": [
+              "HBD-hint-1",
+              "HBD-hint-2",
+              "HBD-hint-3"
+            ]
+          },
+          {
+            "step": 2,
+            "type": "Text Clue",
+            "text": "/HappyBirthdayTennessee.html"
+          }
+        ]
       },
       {
-        "step": 2,
+        "id": "FYTH",
+        "code": "FYTH-3X9Y5Z6AB",
+        "label": "From Year to Here",
         "type": "Text Clue",
-        "text": "/HappyBirthdayTennessee.html"
-      }
-    ]
-  },
-  {
-    "id": "FYTH",
-    "code": "FYTH-3X9Y5Z6AB",
-    "label": "From Year to Here",
-    "type": "Text Clue",
-    "icon": "calendar_month",
-    "steps": [
-      {
-        "step": 1,
-        "type": "Text Clue",
-        "text": "What word connects all of Tennessee?",
-        "secretCode": "volunteer",
-        "shortText": "What word connects all of Tennessee?",
-        "audio": null,
-        "image": null
-      },
-      {
-        "step": 2,
-        "type": "Text Clue",
-        "text": "/FromYearToHere.html"
+        "icon": "calendar_month",
+        "steps": [
+          {
+            "step": 1,
+            "type": "Text Clue",
+            "text": "What word connects all of Tennessee?",
+            "secretCode": "volunteer",
+            "shortText": "What word connects all of Tennessee?",
+            "audio": null,
+            "image": null,
+            "hints": [
+              {
+                "id": "FYTH-hint-1",
+                "order": 1,
+                "preview": "Where do I find the answers?",
+                "text": "You can find all of the answers on the Pathway of History.",
+                "minutePenalty": 5
+              },
+              {
+                "id": "FYTH-hint-2",
+                "order": 2,
+                "preview": "I found all of the city answers, now what do I do?",
+                "text": "Unscramble the circled letters in each city.",
+                "minutePenalty": 15,
+                "hintUnlockIds": [
+                  "FYTH-hint-1"
+                ]
+              },
+              {
+                "id": "FYTH-hint-3",
+                "order": 3,
+                "preview": "I can’t figure out the word. What’s the answer?",
+                "text": "The answer is VOLUNTEER.",
+                "minutePenalty": 15,
+                "hintUnlockIds": [
+                  "FYTH-hint-1",
+                  "FYTH-hint-2"
+                ]
+              }
+            ]
+          },
+          {
+            "step": 2,
+            "type": "Text Clue",
+            "text": "/FromYearToHere.html"
+          }
+        ]
       }
     ]
   }
