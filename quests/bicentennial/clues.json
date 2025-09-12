@@ -41,7 +41,12 @@
             "order": 4,
             "preview": "I give up! What's the answer?",
             "text": "The answer is FISK.",
-            "minutePenalty": 25
+            "minutePenalty": 10,
+            "hintUnlockIds": [
+              "MCFS-hint-1",
+              "MCFS-hint-2",
+              "MCFS-hint-3"
+            ]
           }
         ]
       },
