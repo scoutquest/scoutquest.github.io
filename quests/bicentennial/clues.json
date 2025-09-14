@@ -113,7 +113,7 @@
         "step": 2,
         "type": "SecretCodeClue",
         "shortText": "What’s the secret to preserving Tennessee’s legacy?",
-        "text": "<h2>Essence Of Tennessee</h2>\n\n<h3>Well done!</h3>\n\n<p>You’ve uncovered the proper order of Tennessee’s emblems.</p>\n\n<p>Use the key below to decode the secret to preserving Tennessee’s legacy.</p>\n<img src=\"http://scoutquest.co/quests/bicentennial/images/EOT.png\" />\n",
+        "text": "<h3>Well done!</h3>\n\n<p>You’ve uncovered the proper order of Tennessee’s emblems.</p>\n\n<p>Use the key below to decode the secret to preserving Tennessee’s legacy.</p>\n<img src=\"http://scoutquest.co/quests/bicentennial/images/EOT.png\" />\n",
         "secretCode": "archives",
         "hints": [
           {
@@ -280,7 +280,7 @@
             "id": "SATS-hint-2",
             "order": 2,
             "preview": "I made the airplane and still can’t read the instructions.",
-            "text": "On the giant Tennessee map, each plane icon marks one of these crucial airports. Collect the letters from each marked square, and unscramble them to reclaim this pivotal chapter in our past.. (Show picture)",
+            "text": "On the giant Tennessee map, each plane icon marks one of these crucial airports. Collect the letters from each marked square, and unscramble them to reclaim this pivotal chapter in our past.",
             "minutePenalty": 10,
             "image": "http://scoutquest.co/quests/elements/images/WaterClue1-oH8AZgEDk.png",
             "hintUnlockIds": [
