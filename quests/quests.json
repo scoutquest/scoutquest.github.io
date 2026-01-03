@@ -5,6 +5,11 @@
         "clueFile": "https://scoutquest.co/quests/elements/clues.json"
     },
     {
+        "id": "quest-element-463462",
+        "name": "Master of the Elements",
+        "clueFile": "https://scoutquest.co/quests/elements/clues.json"
+    },
+    {
         "id": "quest_element_2024",
         "name": "Master of the Elements II"
     },

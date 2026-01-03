@@ -5,9 +5,16 @@
         "label": "Fire Clue",
         "type": "Audio Clue",
         "category": "Fire",
-        "text": "1F↓ | Artist Name (10)",
-        "audio": "http://scoutquest.co/quests/elements/audio/FireClue1-4CX6TZPA.mp3",
-        "image": null
+        "icon": "fire",
+        "steps": [
+            {
+                "step": 1,
+                "type": "Audio Clue",
+                "text": "1F↓ | Artist Name (10)",
+                "audio": "http://scoutquest.co/quests/elements/audio/FireClue1-4CX6TZPA.mp3",
+                "image": null
+            }
+        ]
     },
     {
         "id": "FC2",
