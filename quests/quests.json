@@ -7,7 +7,8 @@
     {
         "id": "quest-element-463462",
         "name": "Master of the Elements",
-        "clueFile": "https://scoutquest.co/quests/elements/clues.json"
+        "clueFile": "https://scoutquest.co/quests/elements/clues.json",
+        "welcomeHtml": "<h1>Master of the Elements</h1><p>Master of the Elements challenges you to unlock the secrets of Water, Earth, Wind, and Fire through a series of dynamic puzzles. Will you have what it takes to harness the power of the elements and claim victory?</p>"
     },
     {
         "id": "quest_element_2024",
