@@ -8,7 +8,8 @@
         "id": "quest-element-463462",
         "name": "Master of the Elements",
         "clueFile": "https://scoutquest.co/quests/elements/clues.json",
-        "welcomeHtml": "<h1>Master of the Elements</h1><p>Master of the Elements challenges you to unlock the secrets of Water, Earth, Wind, and Fire through a series of dynamic puzzles. Will you have what it takes to harness the power of the elements and claim victory?</p>"
+        "welcomeHtml": "<h1>Master of the Elements</h1><p>Master of the Elements challenges you to unlock the secrets of Water, Earth, Wind, and Fire through a series of dynamic puzzles. Will you have what it takes to harness the power of the elements and claim victory?</p>",
+        "canAddClues": true
     },
     {
         "id": "quest_element_2024",
@@ -23,6 +24,7 @@
         "completionHtml": "<h1>You Did It!</h1><h3>Congratulations, you’ve completed the Echoes of Tennessee quest!<br/><br/> You’ve uncovered key moments in the state's history and helped preserve Tennessee’s story for future generations.</h3>",
         "iconImage": "timer_outlined",
         "tipsHtml": "<h2>Scout Quest Tips</h2><ul><li>Look closely at your surroundings for hidden clues and details around the park.</li><li>Stuck on a puzzle? Move onto a different one and come back to it.</li><li>Look at the points of interest highligted on the map.</li><li>Each puzzle has hints you can access in the app, just click “I need a hint” at the bottom of the screen.</li></ul>",
-        "billboardImage": "https://scoutquest.co/quests/bicentennial/images/capitol.jpg"
+        "billboardImage": "https://scoutquest.co/quests/bicentennial/images/capitol.jpg",
+        "canAddClues": false
     }
 ]
