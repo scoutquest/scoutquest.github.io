@@ -12,7 +12,141 @@
                 "step": 1,
                 "type": "Audio Clue",
                 "text": "1F↓ | Artist Name (10)",
+                "shortText": "1F↓ | Artist Name (10)",
                 "audio": "http://scoutquest.co/quests/elements/audio/FireClue1-4CX6TZPA.mp3",
+                "image": null
+            }
+        ]
+    },
+    {
+        "id": "FC2",
+        "code": "FireClue2-grTp7XkD9",
+        "label": "Fire Clue",
+        "type": "Audio Clue",
+        "category": "Fire",
+        "icon": "fire",
+        "infoOnly": true,
+        "steps": [
+            {
+                "step": 1,
+                "type": "Audio Clue",
+                "text": "2C→ | Artist Name (5) ",
+                "shortText": "2C→ | Artist Name (5)",
+                "audio": "http://scoutquest.co/quests/elements/audio/FireClue2-grTp7XkD9.mp3",
+                "image": null
+            }
+        ]
+    },
+    {
+        "id": "FC3",
+        "code": "FireClue3-m4vfVokUV",
+        "label": "Fire Clue",
+        "type": "Audio Clue",
+        "category": "Fire",
+        "icon": "fire",
+        "infoOnly": true,
+        "steps": [
+            {
+                "step": 1,
+                "type": "Audio Clue",
+                "text": "5A→ | Song Title (12)",
+                "shortText": "5A→ | Song Title (12)",
+                "audio": "http://scoutquest.co/quests/elements/audio/FireClue3-m4vfVokUV.mp3",
+                "image": null
+            }
+        ]
+    },
+    {
+        "id": "FC4",
+        "code": "FireClue4-r8qCED2Hw",
+        "label": "Fire Clue",
+        "type": "Text Clue",
+        "category": "Fire",
+        "icon": "fire",
+        "infoOnly": true,
+        "steps": [
+            {
+                "step": 1,
+                "type": "Text Clue",
+                "text": "4J↓ | Fire Breather (6)",
+                "shortText": "4J↓ | Fire Breather (6)",
+                "audio": null,
+                "image": null
+            }
+        ]
+    },
+    {
+        "id": "FC5",
+        "code": "FireClue5-rHrrWyg8J",
+        "label": "Fire Clue",
+        "type": "Text Clue",
+        "category": "Fire",
+        "icon": "fire",
+        "infoOnly": true,
+        "steps": [
+            {
+                "step": 1,
+                "type": "Text Clue",
+                "text": "7H→ | Hot Emotion (5)",
+                "shortText": "7H→ | Hot Emotion (5)",
+                "audio": null,
+                "image": null
+            }
+        ]
+    },
+    {
+        "id": "FC6",
+        "code": "FireClue6-hoWgh9pbz",
+        "label": "Fire Clue",
+        "type": "Text Clue",
+        "category": "Fire",
+        "icon": "fire",
+        "infoOnly": true,
+        "steps": [
+            {
+                "step": 1,
+                "type": "Text Clue",
+                "text": "8B→ | Needed to build a fire… or find a match (6)",
+                "shortText": "8B→ | Needed to build a fire… or find a match (6)",
+                "audio": null,
+                "image": null
+            }
+        ]
+    },
+    {
+        "id": "FC7",
+        "code": "FireClue7-2kBauqE9j",
+        "label": "Fire Clue",
+        "type": "Text Clue",
+        "category": "Fire",
+        "icon": "fire",
+        "infoOnly": true,
+        "steps": [
+            {
+                "step": 1,
+                "type": "Text Clue",
+                "text": "8B↓ | Statue of Liberty Item (5)",
+                "shortText": "8B↓ | Statue of Liberty Item (5)",
+                "audio": null,
+                "image": null
+            }
+        ]
+    },
+    {
+        "id": "FC8",
+        "code": "FireClue8-ABvvoc476",
+        "label": "Fire Clue",
+        "type": "Text Clue",
+        "category": "Fire",
+        "icon": "fire",
+        "infoOnly": true,
+        "steps": [
+            {
+                "step": 1,
+                "type": "Text Clue",
+                "text": "12A→ | Rises from the ashes (7)",
+                "shortText": "12A→ | Rises from the ashes (7)",
+                "audio": null,
                 "image": null
             }
         ]
