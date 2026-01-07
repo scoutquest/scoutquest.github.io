@@ -6,6 +6,7 @@
         "type": "Audio Clue",
         "category": "Fire",
         "icon": "fire",
+        "infoOnly": true,
         "steps": [
             {
                 "step": 1,
