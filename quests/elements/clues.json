@@ -5,7 +5,6 @@
         "label": "Fire Clue",
         "type": "Audio Clue",
         "category": "Fire",
-        "icon": "fire",
         "infoOnly": true,
         "steps": [
             {
@@ -24,7 +23,6 @@
         "label": "Fire Clue",
         "type": "Audio Clue",
         "category": "Fire",
-        "icon": "fire",
         "infoOnly": true,
         "steps": [
             {
@@ -43,7 +41,6 @@
         "label": "Fire Clue",
         "type": "Audio Clue",
         "category": "Fire",
-        "icon": "fire",
         "infoOnly": true,
         "steps": [
             {
@@ -62,7 +59,6 @@
         "label": "Fire Clue",
         "type": "Text Clue",
         "category": "Fire",
-        "icon": "fire",
         "infoOnly": true,
         "steps": [
             {
@@ -81,7 +77,6 @@
         "label": "Fire Clue",
         "type": "Text Clue",
         "category": "Fire",
-        "icon": "fire",
         "infoOnly": true,
         "steps": [
             {
@@ -100,7 +95,6 @@
         "label": "Fire Clue",
         "type": "Text Clue",
         "category": "Fire",
-        "icon": "fire",
         "infoOnly": true,
         "steps": [
             {
@@ -119,7 +113,6 @@
         "label": "Fire Clue",
         "type": "Text Clue",
         "category": "Fire",
-        "icon": "fire",
         "infoOnly": true,
         "steps": [
             {
@@ -138,7 +131,6 @@
         "label": "Fire Clue",
         "type": "Text Clue",
         "category": "Fire",
-        "icon": "fire",
         "infoOnly": true,
         "steps": [
             {
