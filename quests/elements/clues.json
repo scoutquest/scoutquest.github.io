@@ -252,8 +252,17 @@
     {
         "id": "MOTE",
         "code": "MasterOfTheElements-XYZ123",
-        "label": "Master of the Elements Final",
+        "label": "Master of the Elements",
         "type": "Completion Clue",
-        "steps": []
+        "steps": [
+            {
+                "step": 1,
+                "type": "Completion Clue",
+                "text": "You have successfully mastered the elements of Water, Earth, Air, and Fire! Your journey through the challenges has showcased your determination and skill. Well done, Master of the Elements!",
+                "shortText": "Congratulations on mastering the elements!",
+                "audio": null,
+                "image": null
+            }
+        ]
     }
 ]
