@@ -1,0 +1,14 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "L4ZYMU7877.com.hoplindigital.scoutquest",
+        "paths": [
+          "/quests/*",
+          "/app/*"
+        ]
+      }
+    ]
+  }
+}
