@@ -248,5 +248,12 @@
                 "image": null
             }
         ]
+    },
+    {
+        "id": "MOTE",
+        "code": "MasterOfTheElements-XYZ123",
+        "label": "Master of the Elements Final",
+        "type": "Completion Clue",
+        "steps": []
     }
 ]
