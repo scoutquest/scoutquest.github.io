@@ -213,10 +213,16 @@
         "type": "Text Clue",
         "category": "Air",
         "infoOnly": true,
-        "text": "<h1>VRREI VOREKOOL</h1><p>Go to the place above and search the railing.</p>",
-        "shortText": "VRREI VOREKOOL",
-        "audio": null,
-        "image": null
+        "steps": [
+            {
+                "step": 1,
+                "type": "Text Clue",
+                "text": "<h1>VRREI VOREKOOL</h1><p>Go to the place above and search the railing.</p>",
+                "shortText": "VRREI VOREKOOL",
+                "audio": null,
+                "image": null
+            }
+        ]
     },
     {
         "id": "AC2",
@@ -228,11 +234,16 @@
         "steps": [
             {
                 "step": 1,
-                "type": "Text Clue",
                 "text": "<p><b>How To Crack The Code</b></p>\n\n<p>The Code can be solved using <b>Native Pollinator Gardening</b>. Use this text to decipher the clues that are [Line - Word - Letter].</p>\n\n<p>I’ll get you started…</p>\n\n<p><b>[13-2-2] is A</b></p>\n\n<p><b>Native Pollinator Gardening</b> can be found using the map on the path nearby.</p>\n\n<p><b style=\"color: red\">YOU ARE HERE</b> is your guide.</p>",
-                "secretCode": "atmosphere",
-                "secretText": "<p>Go back to the circle where you began,</p><p>Find the red bike on its stand.</p><p>Inside you’ll find the tool you need,</p><p>Unlock it with the code: seed.</p>",
                 "shortText": "How To Crack The Code",
+                "audio": null,
+                "image": null
+            },
+            {
+                "step": 2,
+                "shortText": "Final instructions and unlock.",
+                "text": "<p>Go back to the circle where you began,</p><p>Find the red bike on its stand.</p><p>Inside you’ll find the tool you need,</p><p>Unlock it with the code: seed.</p>",
+                "secretCode": "atmosphere",
                 "audio": null,
                 "image": null
             }
