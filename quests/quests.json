@@ -26,7 +26,7 @@
         "iconImage": "timer_outlined",
         "tipsHtml": "<h2>Scout Quest Tips</h2><ul><li>Look closely at your surroundings for hidden clues and details around the park.</li><li>Stuck on a puzzle? Move onto a different one and come back to it.</li><li>Look at the points of interest highligted on the map.</li><li>Each puzzle has hints you can access in the app, just click “I need a hint” at the bottom of the screen.</li></ul>",
         "billboardImage": "https://scoutquest.co/quests/bicentennial/images/EOT_White-OrangeCircle.png",
-        "billboardBackgroundColor": "#06383f",
+        "billboardBackgroundColor": "#a7b05b",
         "canAddClues": false
     }
 ]
