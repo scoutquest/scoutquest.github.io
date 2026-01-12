@@ -291,6 +291,7 @@ header .hero-content .hero-text {
 
 .testimonials {
   padding: 80px 0;
+  background-color: rgba(158, 233, 228, 0.12); /* very light aqua */
 }
 
 .testimonials h2 {
@@ -413,10 +414,7 @@ header .hero-content .hero-text {
 }
 
 .signup-section {
-  background-color: #003a42;
-  /* Dark green background color */
-  color: #ffffff;
-  /* Light text color for contrast */
+  background-color: rgba(158, 233, 228, 0.12); /* very light aqua */
   padding: 60px 0;
   text-align: center;
 }
@@ -463,10 +461,10 @@ header .hero-content .hero-text {
   padding: 20px;
   font-size: 1.2em;
   /* Larger font size for the input text */
-  border: 2px solid #ffffff;
+  /* border: 2px solid #ffffff; */
   border-radius: 4px;
   background: transparent;
-  color: #ffffff;
+  /* color: #ffffff; */
   margin-right: 10px;
   /* Ensure there's a gap between the input and the button */
 }
@@ -852,5 +850,163 @@ header .hero-content .hero-text {
   .secondary-ghost,
   .preorder-btn {
     width: 100%;
+  }
+}
+
+/* ===== Echoes: full-width copy + corner badge ===== */
+
+.echoes-section {
+  padding: 90px 0;
+  position: relative;
+  overflow: hidden; /* keeps badge from causing horizontal scroll */
+}
+
+.echoes-section .container {
+  max-width: 1000px; /* narrower = premium reading width */
+  margin: 0 auto;
+  padding: 0 15px;
+  position: relative;
+  text-align: center;
+}
+
+/* Badge in corner */
+.echoes-badge {
+  position: absolute;
+  top: -22px;
+  left: 10px;
+  width: 225px; /* tweak this */
+  height: auto;
+  /* transform: rotate(6deg); */
+  filter: drop-shadow(0 16px 24px rgba(0, 0, 0, 0.18));
+  pointer-events: none;
+}
+
+/* Typography */
+.echoes-kicker {
+  color: #003a42;
+  font-size: 1.1em;
+  margin: 0 0 0.6em 0;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-weight: 700;
+}
+
+.echoes-title {
+  color: #003a42;
+  font-size: 3em;
+  font-weight: 700;
+  margin: 0 0 0.25em 0;
+}
+
+.echoes-subtitle {
+  margin: 0 0 1.1em 0;
+  font-size: 1.6em;
+  font-weight: 600;
+  color: #003a42;
+}
+
+.echoes-description {
+  max-width: 70ch;
+  margin: 0 auto 30px;
+  font-size: 1.35em;
+  color: #333;
+  line-height: 1.5;
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+/* Highlights */
+.echoes-highlights {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin: 0 auto 28px;
+}
+
+.echoes-highlight {
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(0, 58, 66, 0.16);
+  border-radius: 14px;
+  padding: 18px 16px;
+  backdrop-filter: blur(6px);
+}
+
+.echoes-highlight h4 {
+  margin: 0 0 8px 0;
+  font-size: 1.05em;
+  font-weight: 800;
+  color: #003a42;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.echoes-highlight p {
+  margin: 0;
+  color: #444;
+  font-size: 1em;
+  line-height: 1.35;
+  text-transform: none;
+  letter-spacing: normal;
+  font-weight: 500;
+}
+
+/* Actions */
+.echoes-actions {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 6px;
+}
+
+.echoes-fineprint {
+  margin: 14px 0 0 0;
+  color: #666;
+  font-size: 1em;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .echoes-highlights {
+    grid-template-columns: 1fr;
+    max-width: 520px;
+  }
+
+  .echoes-badge {
+    width: 160px;
+    top: -18px;
+    right: -8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .echoes-section {
+    padding: 70px 0;
+  }
+
+  .echoes-title {
+    font-size: 2.4em;
+  }
+
+  .echoes-subtitle {
+    font-size: 1.35em;
+  }
+
+  .echoes-description {
+    font-size: 1.2em;
+  }
+
+  .echoes-actions .preorder-btn,
+  .echoes-actions .secondary-ghost {
+    width: 100%;
+    max-width: 420px;
+  }
+
+  .echoes-badge {
+    position: static; /* badge becomes inline on small screens */
+    margin: 0 auto 10px;
+    display: block;
+    transform: rotate(4deg);
   }
 }
