@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Echoes of Tennessee Quest Box • Scout Quest</title>
+
+    <link rel="icon" href="../img/favicon.ico" />
+
+    <meta
+      name="description"
+      content="Reserve the Echoes of Tennessee Quest Box — a physical puzzle box with 8 puzzles designed to be solved on location in a Nashville park. Launches March 14, 2026. Limited run: 100 boxes."
+    />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://scoutquest.co/echoes.html" />
+    <meta
+      property="og:title"
+      content="Echoes of Tennessee Quest Box • Scout Quest"
+    />
+    <meta
+      property="og:description"
+      content="A physical Quest Box with 8 puzzles designed for on-location play in a Nashville park. Launches March 14, 2026. Limited run: 100 boxes."
+    />
+    <!-- PLACEHOLDER -->
+    <meta
+      property="og:image"
+      content="http://scoutquest.co/img/product/echoes/hero-1200x630.jpg"
+    />
+
+    <!-- Your existing global styles -->
+    <link rel="stylesheet" href="../css/landing.css" />
+
+    <!-- Product page styles (scoped) -->
+    <link rel="stylesheet" href="../css/echoes.css" />
+  </head>
+
+  <body>
+    <div class="echoes-pdp page">
+      <!-- Top bar -->
+      <div class="topbar">
+        <div class="topbar-inner">
+          <a class="brand" href="index.html">
+            <!-- PLACEHOLDER: use whichever logo you want here -->
+            <img src="../img/logo-white.png" alt="Scout Quest" />
+          </a>
+
+          <nav class="navlinks" aria-label="Page navigation">
+            <a href="#details">Details</a>
+            <a href="#how">How It Works</a>
+            <a href="#faq">FAQ</a>
+          </nav>
+
+          <a class="cta-mini" href="#reserve">Preorder Now</a>
+        </div>
+      </div>
+
+      <main class="wrap">
+        <div class="pdp-grid">
+          <!-- Gallery -->
+          <section class="gallery" aria-label="Product gallery">
+            <div class="gallery-main">
+              <div class="badge-corner">Launch: Mar 14, 2026</div>
+
+              <!-- PLACEHOLDER: main product image -->
+              <img
+                src="../img/landing/EchoesGreenSticker.png"
+                alt="Echoes of Tennessee Quest Box (placeholder image)"
+              />
+            </div>
+
+            <div class="thumbs" aria-label="Gallery thumbnails">
+              <!-- PLACEHOLDER thumbs -->
+              <div class="thumb">
+                <img
+                  src="../img/landing/EchoesGreenSticker.png"
+                  alt="Echoes thumbnail 1 (placeholder)"
+                />
+              </div>
+              <div class="thumb">
+                <img
+                  src="../img/landing/EchoesGreenSticker.png"
+                  alt="Echoes thumbnail 2 (placeholder)"
+                />
+              </div>
+              <div class="thumb">
+                <img
+                  src="../img/landing/EchoesGreenSticker.png"
+                  alt="Echoes thumbnail 3 (placeholder)"
+                />
+              </div>
+              <div class="thumb">
+                <img
+                  src="../img/landing/EchoesGreenSticker.png"
+                  alt="Echoes thumbnail 4 (placeholder)"
+                />
+              </div>
+            </div>
+          </section>
+
+          <!-- Buy box -->
+          <aside class="buybox" aria-label="Purchase options">
+            <div class="eyebrow">Scout Quest • Quest Box</div>
+
+            <h1 class="product-title">Echoes of Tennessee</h1>
+            <p class="subtitle">A Quest to Restore the Timeline</p>
+
+            <div class="price-row">
+              <div class="price">
+                $<span id="price-amount">TBD</span> <small>USD</small>
+              </div>
+              <div class="inventory">Limited run: <b>100 boxes</b></div>
+            </div>
+
+            <ul class="short-desc">
+              <li>
+                <b>One physical Quest Box</b> with components for
+                <b>8 puzzles</b>
+              </li>
+              <li><b>Designed for on-location play</b> in a Nashville park</li>
+              <li>
+                <b>Join other teams on launch day,</b> or play the same quest
+                later
+              </li>
+            </ul>
+
+            <dl class="quick-facts" aria-label="Quick facts">
+              <div class="qf-row">
+                <dt>Team size</dt>
+                <dd>
+                  Recommended for <b>2–6</b> (solo or larger groups work too)
+                </dd>
+              </div>
+              <div class="qf-row">
+                <dt>Play time</dt>
+                <dd>About <b>2–3 hours</b></dd>
+              </div>
+              <div class="qf-row">
+                <dt>Difficulty</dt>
+                <dd><b>Casual–Moderate</b> (hints available)</dd>
+              </div>
+              <div class="qf-row">
+                <dt>Location</dt>
+                <dd>Nashville park <b>(revealed closer to launch)</b></dd>
+              </div>
+            </dl>
+
+            <div class="divider"></div>
+
+            <div class="field">
+              <div class="label">How do you want to receive it?</div>
+
+              <div
+                class="options"
+                role="radiogroup"
+                aria-label="Fulfillment options"
+              >
+                <label class="option">
+                  <input
+                    type="radio"
+                    name="fulfillment"
+                    value="pickup"
+                    checked
+                  />
+                  <div>
+                    <p class="option-title">Launch-Day Pickup</p>
+                    <p class="option-desc">
+                      Be part of the launch. Solve the quest while other teams
+                      are out searching and discovering.
+                    </p>
+                  </div>
+                </label>
+
+                <label class="option">
+                  <input type="radio" name="fulfillment" value="ship" />
+                  <div>
+                    <p class="option-title">Ship to Me</p>
+                    <p class="option-desc">
+                      Prefer a quieter experience? We’ll ship your box after
+                      launch so you can play when it works for you.
+                    </p>
+                  </div>
+                </label>
+              </div>
+            </div>
+
+            <div class="field">
+              <div class="label">
+                Quantity
+                <span>One box per group recommended</span>
+              </div>
+              <div class="qty-row">
+                <input type="number" id="qty" min="1" value="1" />
+              </div>
+            </div>
+
+            <div class="actions" id="reserve">
+              <a
+                class="btn-primary"
+                href="../#"
+                aria-label="Reserve your quest box (placeholder checkout link)"
+              >
+                Reserve Your Quest Box
+              </a>
+
+              <div class="sub-cta-row">
+                <a class="btn-secondary" href="#details">See full details</a>
+                <a class="btn-tertiary" href="#how">How it works</a>
+              </div>
+
+              <div class="fineprint good-to-know">
+                <b>App required:</b> free to download. Only one phone per group
+                is needed.<br />
+              </div>
+            </div>
+          </aside>
+        </div>
+
+        <div class="sections">
+          <section class="section-card" id="details">
+            <h2>What you’re getting</h2>
+
+            <div class="kvs kvs-media">
+              <!-- Pillar 1 -->
+              <div class="kv kv-media">
+                <div class="kv-img" aria-hidden="true">
+                  <!-- IMAGE PLACEHOLDER: replace with "box + contents" -->
+                  <img
+                    src="../img/landing/EchoesGreenSticker.png"
+                    alt="Quest Box and contents placeholder"
+                  />
+                </div>
+
+                <div class="kv-body">
+                  <strong>The Quest Box</strong>
+                  <span>
+                    One physical box with everything your group needs to
+                    complete
+                    <b>8 puzzles</b> on location—built for collaboration,
+                    observation, and satisfying “aha” moments.
+                  </span>
+
+                  <ul class="kv-bullets">
+                    <li>Designed for one group to share</li>
+                    <li>
+                      Puzzle components are mostly physical (not screen-based)
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Pillar 2 -->
+              <div class="kv kv-media">
+                <div class="kv-img" aria-hidden="true">
+                  <!-- IMAGE PLACEHOLDER: replace with "the park" -->
+                  <img
+                    src="../img/landing/EchoesGreenSticker.png"
+                    alt="Nashville park placeholder"
+                  />
+                </div>
+
+                <div class="kv-body">
+                  <strong>The Place</strong>
+                  <span>
+                    Designed for a <b>specific Nashville park</b>. Signs,
+                    monuments, and details become part of the puzzle—your
+                    surroundings provide the clues.
+                  </span>
+
+                  <ul class="kv-bullets">
+                    <li>
+                      Explore with fresh eyes (the “answer” is often in plain
+                      sight)
+                    </li>
+                    <li>Observation matters as much as logic</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Pillar 3 -->
+              <div class="kv kv-media">
+                <div class="kv-img" aria-hidden="true">
+                  <!-- IMAGE PLACEHOLDER: replace with "app in context" -->
+                  <img
+                    src="../img/landing/EchoesGreenSticker.png"
+                    alt="Companion app placeholder"
+                  />
+                </div>
+
+                <div class="kv-body">
+                  <strong>The Companion App (free)</strong>
+                  <span>
+                    The app keeps your quest moving—confirm answers, track
+                    progress, and use hints if you need them. The solving
+                    happens in the real world.
+                  </span>
+
+                  <ul class="kv-bullets">
+                    <li>One phone per group is enough</li>
+                    <li>Hints are available (and affect your final time)</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="section-card launch-day" id="how">
+            <div class="launch-grid">
+              <!-- IMAGE (placeholder for now) -->
+              <div class="launch-media" aria-hidden="true">
+                <img
+                  src="../img/landing/EchoesGreenSticker.png"
+                  alt="Launch day at the park placeholder"
+                />
+                <!-- Optional small caption; remove if you don't want it -->
+                <p class="launch-caption">
+                  Image placeholder: teams playing together in the park
+                </p>
+              </div>
+
+              <!-- COPY -->
+              <div class="launch-copy">
+                <h2>Launch Day</h2>
+
+                <p class="muted">
+                  <b>Echoes of Tennessee launches March 14, 2026.</b> If you
+                  choose <b>Launch-Day Pickup</b>, you’ll pick up your Quest Box
+                  at the park and set out to solve the puzzles alongside other
+                  groups doing the same.
+                </p>
+
+                <ul class="launch-bullets">
+                  <li>
+                    <b>Play alongside other teams</b> exploring, searching, and
+                    piecing things together
+                  </li>
+                  <li>
+                    <b>Be among the first</b> to complete Echoes of Tennessee
+                  </li>
+                  <li>
+                    <b>Exclusive launch-day swag</b> only available to launch
+                    participants
+                  </li>
+                </ul>
+
+                <p class="muted launch-note">
+                  Can’t make it? No problem. Choose shipping and play later.
+                  Your group’s run is still timed in the app, and the Quest Box
+                  is exactly the same.
+                </p>
+
+                <!-- Optional mini CTA row (matches your style language) -->
+                <div class="launch-links">
+                  <a class="btn-tertiary" href="#reserve">Preorder Now</a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="section-card" id="faq" aria-label="FAQ">
+            <h2>FAQ</h2>
+
+            <div class="faq-item">
+              <button
+                class="faq-q"
+                onclick="toggleFaq('faq1')"
+                aria-expanded="false"
+              >
+                Is this a live event or self-guided?
+                <span class="icon">+</span>
+              </button>
+              <div class="faq-a" id="faq1">
+                Echoes is a physical Quest Box designed for on-location play.
+                Launch-day access is included, but your team starts when you tap
+                “Start” in the app during the launch window.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button
+                class="faq-q"
+                onclick="toggleFaq('faq2')"
+                aria-expanded="false"
+              >
+                Do we need the app?
+                <span class="icon">+</span>
+              </button>
+              <div class="faq-a" id="faq2">
+                Yes. The app is required for timing, hints, and progress. Only
+                one person per team needs to download it and it’s free.
+                Instructions are included in the box.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button
+                class="faq-q"
+                onclick="toggleFaq('faq3')"
+                aria-expanded="false"
+              >
+                What’s inside the box?
+                <span class="icon">+</span>
+              </button>
+              <div class="faq-a" id="faq3">
+                Components for 8 puzzles (mostly paper-based), plus
+                instructions. It’s designed for teamwork and observation on
+                location.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button
+                class="faq-q"
+                onclick="toggleFaq('faq4')"
+                aria-expanded="false"
+              >
+                Can I play if I can’t attend the launch gathering?
+                <span class="icon">+</span>
+              </button>
+              <div class="faq-a" id="faq4">
+                Yes. Choose shipping and play on your own schedule. The puzzles
+                are the same—you just won’t have other teams nearby.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button
+                class="faq-q"
+                onclick="toggleFaq('faq5')"
+                aria-expanded="false"
+              >
+                Is it reusable?
+                <span class="icon">+</span>
+              </button>
+              <div class="faq-a" id="faq5">
+                Echoes is designed as a one-time experience at a specific
+                location and is not intended to be replayed after completion.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button
+                class="faq-q"
+                onclick="toggleFaq('faq6')"
+                aria-expanded="false"
+              >
+                How long does it take?
+                <span class="icon">+</span>
+              </button>
+              <div class="faq-a" id="faq6">
+                Most teams finish in about 2–3 hours depending on pace and hint
+                usage.
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+
+      <footer>
+        <div><b>Scout Quest</b> • Nashville, TN</div>
+        <div class="footer-links">
+          <a href="../index.html">Home</a>
+          <span>•</span>
+          <a href="../#">Support (placeholder)</a>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      function toggleFaq(id) {
+        var answer = document.getElementById(id);
+        var btn = answer.previousElementSibling;
+        var icon = btn.querySelector(".icon");
+
+        var isOpen = answer.classList.contains("active");
+
+        if (isOpen) {
+          answer.classList.remove("active");
+          btn.setAttribute("aria-expanded", "false");
+          if (icon) icon.textContent = "+";
+        } else {
+          answer.classList.add("active");
+          btn.setAttribute("aria-expanded", "true");
+          if (icon) icon.textContent = "–";
+        }
+      }
+    </script>
+  </body>
+</html>
