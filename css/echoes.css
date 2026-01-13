@@ -811,3 +811,11 @@
     aspect-ratio: 16 / 9;
   }
 }
+
+.echoes-pdp .hook {
+  margin: 10px 0 0;
+  color: rgba(0, 0, 0, 0.72);
+  font-weight: 600;
+  line-height: 1.45;
+  font-size: 1rem;
+}
