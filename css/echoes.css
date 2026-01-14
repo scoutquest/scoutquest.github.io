@@ -98,7 +98,7 @@
 }
 
 .echoes-pdp .navlinks a:hover {
-  color: rgba(0, 0, 0, 0.92);
+  color: var(--lime);
 }
 
 .echoes-pdp .cta-mini {
