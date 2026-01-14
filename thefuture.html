@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Scout Quest</title>
 
-    <link rel="stylesheet" href="fonts/Quicksand-VariableFont_wght.ttf" />
     <link rel="stylesheet" href="css/landing.css" />
     <link rel="icon" href="img/favicon.ico" />
 
@@ -32,12 +31,22 @@
       <header>
         <img
           src="img/landing/hero-image3.jpeg"
-          alt="Hero Image"
+          alt="People solving puzzles in a Nashville park"
           class="hero-image"
         />
         <div class="hero-overlay"></div>
+
         <div class="hero-content">
-          <img src="img/logo-white.png" alt="Scout Quest Logo" class="logo" />
+          <!-- Brand (secondary) -->
+          <div class="hero-brand">
+            <img src="img/logo-white.png" alt="Scout Quest" class="logo" />
+            <span class="brand-byline">A real-world puzzle experience</span>
+          </div>
+
+          <!-- Campaign (primary) -->
+          <h1 class="hero-title">Echoes of Tennessee</h1>
+          <p class="hero-launch-date">Launching March 14, 2026</p>
+          <p class="hero-subtitle"><em>A Quest to Restore the Timeline</em></p>
 
           <p class="hero-text">
             Find clues, solve puzzles, and navigate your way through an
@@ -47,14 +56,13 @@
           <div class="launch-card" aria-label="Launch countdown and actions">
             <div class="launch-card-top">
               <div class="launch-meta">
-                <div class="launch-kicker">New Quest Launching</div>
-                <div class="launch-date">March 14, 2026</div>
+                <div class="launch-kicker">Launch Day</div>
+                <div class="launch-date">March 14, 2026 • Nashville</div>
               </div>
 
               <div class="launch-ctas">
-                <!-- Update echoes.html path as needed -->
                 <a
-                  href="quests/echoes.html"
+                  href="quests/echoes"
                   class="hero-btn primary-btn preorder-btn"
                 >
                   RESERVE YOUR QUEST BOX
@@ -82,7 +90,8 @@
             </div>
 
             <div class="launch-card-foot">
-              Includes access to the launch-day event or optional shipping.
+              Pick up in the park on launch day and play alongside other teams —
+              or choose shipping and play whenever you’re ready.
             </div>
           </div>
         </div>
@@ -137,11 +146,8 @@
           </div>
 
           <div class="echoes-actions">
-            <a href="echoes.html" class="hero-btn primary-btn preorder-btn">
+            <a href="/quests/echoes" class="hero-btn primary-btn preorder-btn">
               RESERVE YOUR QUEST BOX
-            </a>
-            <a href="#signup-section" class="hero-btn secondary-ghost">
-              GET UPDATES
             </a>
           </div>
         </div>
