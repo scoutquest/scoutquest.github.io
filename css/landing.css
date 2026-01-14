@@ -1,3 +1,4 @@
+/* ---------- Font ---------- */
 @font-face {
   font-family: "Quicksand";
   src: url("../fonts/Quicksand-VariableFont_wght.ttf") format("truetype");
@@ -5,24 +6,107 @@
   font-display: swap;
 }
 
-body,
-html {
-  margin: 0;
-  padding: 0;
-  font-family: "Quicksand", sans-serif;
-  height: 100%;
+@font-face {
+  font-family: "Enchanted";
+  src: url("../fonts/EnchantedTalesRegular.otf") format("opentype");
 }
 
+/* ---------- Base ---------- */
+:root {
+  --sq-teal: #003a42;
+  --sq-green: #d4f553;
+  --sq-pink: #ff69b4;
+  --sq-aqua-bg: rgba(158, 233, 228, 0.12);
+
+  --container: 1200px;
+  --container-narrow: 800px;
+  --container-echoes: 1000px;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Quicksand", sans-serif;
+}
+
+/* Shared container pattern */
+.container {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* ---------- Buttons ---------- */
+.hero-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40px;
+  text-decoration: none;
+  margin: 0;
+  transition: all 0.3s ease;
+}
+
+.primary-btn {
+  background-color: var(--sq-green);
+  color: var(--sq-teal);
+  border: none;
+  font-weight: 700;
+  font-family: "Quicksand", sans-serif;
+  padding: 20px 30px;
+  font-size: 1.4em;
+}
+
+.secondary-link {
+  background-color: var(--sq-pink);
+  color: #fff;
+  border: 2px solid var(--sq-pink);
+  font-weight: 400;
+}
+
+.primary-btn:hover,
+.secondary-link:hover,
+.primary-btn:focus,
+.secondary-link:focus {
+  cursor: pointer;
+}
+
+/* Optional legacy */
+.button-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* ---------- Backgrounds ---------- */
+.maze-background {
+  background-image: url("../img/landing/maze.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #ffffff;
+}
+
+/* =========================================================
+   HERO / HEADER
+   ========================================================= */
 header {
   position: relative;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh; /* let it grow when content is taller */
+  height: auto;
   text-align: left;
 }
 
 header .hero-image {
   width: 100%;
   height: 100%;
+  min-height: 100vh;
   object-fit: cover;
   position: absolute;
   top: 0;
@@ -37,146 +121,332 @@ header .hero-overlay {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.25);
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.38);
   z-index: 1;
 }
 
 header .hero-content {
   position: relative;
+  z-index: 2;
+
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  padding: 5%;
-  z-index: 2;
+  justify-content: center;
+
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: clamp(28px, 5vw, 60px);
+}
+
+.hero-brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 18px;
 }
 
 header .hero-content .logo {
-  max-width: 40%;
+  max-height: 72px;
+  width: auto;
   display: block;
-  margin-bottom: 40px;
+  margin: 0 0 28px 0;
+}
+
+.brand-byline {
+  color: rgba(255, 255, 255, 0.82);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+.hero-title {
+  margin: 0;
+  color: #ffffff;
+  font-weight: bold;
+  letter-spacing: -0.02em;
+  line-height: 1.02;
+  font-size: clamp(2.6rem, 5vw, 5.2rem);
+  text-shadow: 0 12px 40px rgba(0, 0, 0, 0.55);
+  font-family: "Enchanted";
+}
+
+.hero-subtitle {
+  margin: 6px 0 10px 0;
+  color: rgba(255, 255, 255, 0.92);
+  font-weight: 700;
+  font-size: clamp(1.15rem, 1.8vw, 1.5rem);
+  text-shadow: 0 10px 26px rgba(0, 0, 0, 0.45);
+}
+
+.hero-launch-date {
+  margin-top: 6px;
+  font-size: 1.2em;
+  font-weight: 700;
+  color: var(--sq-green);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 header .hero-content .hero-text {
-  max-width: 60%;
-  font-size: 2em;
-  line-height: 1.2;
-  color: #ffffff;
-  font-weight: bold;
+  max-width: 40ch;
+  font-size: clamp(1.1rem, 1.6vw, 1.4rem);
+  line-height: 1.35;
+  font-weight: 700;
   margin: 0;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  color: rgba(255, 255, 255, 0.92);
 }
 
-.button-container {
+/* ---------- Launch Card ---------- */
+.launch-card {
+  margin-top: 22px;
+  width: 100%;
+  max-width: 700px;
+  padding: 18px 18px 14px;
+  border-radius: 18px;
+  background: rgba(0, 0, 0, 0.32);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(10px);
+}
+
+.launch-card-top {
   display: flex;
-  flex-direction: row;
   align-items: center;
-  justify-content: flex-start;
-  gap: 10px;
-  margin-top: 20px;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 14px;
+  flex-wrap: wrap;
 }
 
-.hero-btn {
+.launch-meta {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 8px 16px;
-  font-size: 0.85em;
-  text-decoration: none;
-  border-radius: 40px;
-  margin: 0;
-  transition: all 0.3s ease;
+  flex-direction: column;
+  gap: 6px;
 }
 
-.primary-btn {
-  font-size: 0.85em;
-  text-decoration: none;
-  border-radius: 40px;
-  background-color: #d4f553;
-  color: #003a42;
-  border: none;
-  font-weight: bold;
-  font-family: "Quicksand", sans-serif;
-  padding: 20px 30px;
-  font-size: 1.4em;
-}
-
-.secondary-link {
-  background-color: #ff69b4;
-  color: #fff;
-  border: 2px solid #ff69b4;
-  font-weight: normal;
-}
-.primary-btn:hover,
-.secondary-link:hover,
-.primary-btn:focus,
-.secondary-link:focus {
-  cursor: pointer;
-}
-
-.maze-background {
-  background-image: url("../img/landing/maze.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-color: #ffffff;
-}
-
-.master-of-elements {
-  text-align: center;
-  padding: 80px 0;
-}
-
-.master-of-elements .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
-.master-of-elements p {
-  color: #555;
-  font-size: 1.2em;
-  margin-top: 0;
-  margin-bottom: 0.5em;
-  text-transform: uppercase;
+.launch-kicker {
+  display: inline-block;
+  width: fit-content;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(212, 245, 83, 0.18);
+  border: 1px solid rgba(212, 245, 83, 0.35);
+  color: var(--sq-green);
+  font-weight: 700;
   letter-spacing: 0.1em;
-  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.8em;
 }
 
-.master-of-elements h2 {
-  color: #003a42;
+.launch-date {
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 1.2em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.45);
+}
+
+.launch-ctas {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.preorder-btn {
+  padding: 12px 18px;
+  font-size: 1.05em;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
+  white-space: nowrap;
+}
+
+.secondary-ghost {
+  padding: 12px 18px;
+  font-size: 1.05em;
+  border-radius: 40px;
+  background: transparent;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  font-weight: 700;
+  text-decoration: none;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.secondary-ghost:hover,
+.secondary-ghost:focus {
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.12);
+  transform: translateY(-1px);
+}
+
+.countdown-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(80px, 1fr));
+  gap: 12px;
+}
+
+.countdown-cell {
+  background: rgba(0, 0, 0, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 14px;
+  padding: 14px 10px;
+  text-align: center;
+}
+
+.countdown-number {
+  font-size: 2em;
+  font-weight: 800;
+  line-height: 1;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.45);
+}
+
+.countdown-unit {
+  margin-top: 8px;
+  font-size: 0.85em;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.launch-card-foot {
+  margin-top: 12px;
+  font-size: 1em;
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.launch-inline-link {
+  color: var(--sq-pink);
+  font-weight: 700;
+  text-decoration: none;
+  margin-left: 6px;
+}
+
+.launch-inline-link:hover,
+.launch-inline-link:focus {
+  text-decoration: underline;
+}
+
+/* =========================================================
+   ECHOES SECTION
+   ========================================================= */
+.echoes-section {
+  padding: 90px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.echoes-section .container {
+  max-width: var(--container-echoes);
+  position: relative;
+  text-align: center;
+}
+
+.echoes-badge {
+  position: absolute;
+  top: -22px;
+  left: 10px;
+  width: 225px;
+  height: auto;
+  filter: drop-shadow(0 16px 24px rgba(0, 0, 0, 0.18));
+  pointer-events: none;
+}
+
+.echoes-kicker {
+  color: var(--sq-teal);
+  font-size: 1.1em;
+  margin: 0 0 0.6em 0;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-weight: 700;
+}
+
+.echoes-title {
+  color: var(--sq-teal);
   font-size: 3em;
   font-weight: 700;
-  margin-top: 0.5em;
-  margin-bottom: 1em;
-  text-transform: none;
-  letter-spacing: normal;
+  margin: 0 0 0.25em 0;
 }
 
-.master-of-elements .elements-icons {
+.echoes-subtitle {
+  margin: 0 0 1.1em 0;
+  font-size: 1.6em;
+  font-weight: 600;
+  color: var(--sq-teal);
+}
+
+.echoes-description {
+  max-width: 70ch;
+  margin: 0 auto 30px;
+  font-size: 1.35em;
+  color: #333;
+  line-height: 1.5;
+}
+
+.echoes-highlights {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin: 0 auto 28px;
+}
+
+.echoes-highlight {
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(0, 58, 66, 0.16);
+  border-radius: 14px;
+  padding: 18px 16px;
+  backdrop-filter: blur(6px);
+}
+
+.echoes-highlight h4 {
+  margin: 0 0 8px 0;
+  font-size: 1.05em;
+  font-weight: 800;
+  color: var(--sq-teal);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.echoes-highlight p {
+  margin: 0;
+  color: #444;
+  font-size: 1em;
+  line-height: 1.35;
+  font-weight: 500;
+}
+
+.echoes-actions {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 40px;
-  margin-bottom: 40px;
+  margin-top: 6px;
 }
 
-.master-of-elements .element-icon {
-  width: 150px;
-  height: 150px;
-  object-fit: contain;
-  display: block;
+.echoes-fineprint {
+  margin: 14px 0 0 0;
+  color: #666;
+  font-size: 1em;
 }
 
-.master-of-elements .elements-description {
-  max-width: 800px;
-  margin: 0 auto 50px;
-  font-size: 1.4em;
+/* =========================================================
+   ABOUT
+   ========================================================= */
+.about {
+  background-color: var(--sq-teal);
+  color: #ffffff;
+  padding: 80px 0;
+  position: relative;
 }
 
-.master-of-elements .primary-btn {
-  max-width: 200px;
-  display: inline-block;
-  margin-top: 20px;
+.about .container {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
 }
 
 .iphone-wrapper {
@@ -194,32 +464,15 @@ header .hero-content .hero-text {
   transform: rotate(10deg);
 }
 
-.about {
-  background-color: #003a42;
-  color: #ffffff;
-  padding: 80px 0;
-  position: relative;
-}
-
-.about .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
-  display: flex;
-  flex-direction: column;
-  gap: 60px;
-}
-
 .about .about-description {
   text-align: left;
   max-width: 40%;
-  color: #ffffff;
   margin-left: 0;
   padding-left: 0;
 }
 
 .about .about-description h4 {
-  color: #d4f553;
+  color: var(--sq-green);
   text-transform: uppercase;
   margin-bottom: 0;
   font-weight: 300;
@@ -236,13 +489,7 @@ header .hero-content .hero-text {
 .about .about-description p {
   font-size: 1.3em;
   margin: 0;
-  font-weight: normal;
-}
-
-@media (max-width: 768px) {
-  .about .about-description {
-    max-width: 100%;
-  }
+  font-weight: 400;
 }
 
 .about .about-features {
@@ -289,9 +536,65 @@ header .hero-content .hero-text {
   margin: 25px auto;
 }
 
+/* =========================================================
+   MASTER OF ELEMENTS
+   ========================================================= */
+.master-of-elements {
+  text-align: center;
+  padding: 80px 0;
+}
+
+.master-of-elements p {
+  color: #555;
+  font-size: 1.2em;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+}
+
+.master-of-elements h2 {
+  color: var(--sq-teal);
+  font-size: 3em;
+  font-weight: 700;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+}
+
+.master-of-elements .elements-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.master-of-elements .element-icon {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  display: block;
+}
+
+.master-of-elements .elements-description {
+  max-width: 800px;
+  margin: 0 auto 50px;
+  font-size: 1.4em;
+}
+
+.master-of-elements .primary-btn {
+  max-width: 200px;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+/* =========================================================
+   TESTIMONIALS
+   ========================================================= */
 .testimonials {
   padding: 80px 0;
-  background-color: rgba(158, 233, 228, 0.12); /* very light aqua */
+  background-color: var(--sq-aqua-bg);
 }
 
 .testimonials h2 {
@@ -304,10 +607,8 @@ header .hero-content .hero-text {
 .testimonial-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  /* Two columns of equal width */
   gap: 100px;
-  /* Space between grid items */
-  max-width: 1200px;
+  max-width: var(--container);
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -329,26 +630,26 @@ header .hero-content .hero-text {
 
 .testimonial-text {
   font-size: 1.5em;
-  /* Adjusted for better readability */
   padding: 0 20px;
 }
 
 .testimonial-author {
   font-size: 1em;
-  color: #ff69b4;
+  color: var(--sq-pink);
   font-weight: 500;
   margin-top: 0.5em;
 }
 
+/* =========================================================
+   FAQ
+   ========================================================= */
 .faq {
-  background-color: #003a42;
-  /* Adjust the color to match your screenshot */
+  background-color: var(--sq-teal);
   padding: 2rem;
-  font-family: "Quicksand", sans-serif;
 }
 
 .faq .container {
-  max-width: 800px;
+  max-width: var(--container-narrow);
   margin: 0 auto;
   padding: 1rem;
 }
@@ -363,10 +664,7 @@ header .hero-content .hero-text {
 .faq-item {
   margin-bottom: 1rem;
   color: #fff;
-  /* Adjust to match the screenshot */
-  /* border-radius: 8px; */
-  /* Rounded corners if present in the design */
-  border-bottom: 1px solid #ff69b4;
+  border-bottom: 1px solid var(--sq-pink);
 }
 
 .faq-question {
@@ -380,23 +678,18 @@ header .hero-content .hero-text {
   color: #fff;
   font-family: "Quicksand", sans-serif;
   font-weight: 500;
-  /* Light separator line */
 }
 
 .faq-question::after {
   content: "\002B";
-  /* Plus sign */
   float: right;
   font-size: 1.5rem;
-  color: #ff69b4;
+  color: var(--sq-pink);
   font-weight: 600;
 }
 
 .faq-question[aria-expanded="true"]::after {
   content: "\2212";
-  color: #ff69b4;
-  font-weight: 600;
-  /* Minus sign */
 }
 
 .faq-answer {
@@ -405,24 +698,24 @@ header .hero-content .hero-text {
 }
 
 .faq-answer a {
-  color: #ff69b4;
+  color: var(--sq-pink);
 }
 
-/* Style for when the answer is visible */
 .faq-answer.active {
   display: block;
 }
 
+/* =========================================================
+   SIGNUP
+   ========================================================= */
 .signup-section {
-  background-color: rgba(158, 233, 228, 0.12); /* very light aqua */
+  background-color: var(--sq-aqua-bg);
   padding: 60px 0;
   text-align: center;
 }
 
 .signup-section .container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 0 15px;
+  max-width: var(--container-narrow);
 }
 
 .signup-section h2 {
@@ -436,7 +729,6 @@ header .hero-content .hero-text {
 }
 
 .signup-section form {
-  /* Remove distinct background to blend with section */
   padding: 20px;
   border-radius: 8px;
 }
@@ -452,521 +744,38 @@ header .hero-content .hero-text {
   display: flex;
   gap: 10px;
   width: 100%;
-  /* Ensure the group takes full width */
 }
 
 .signup-section input[type="email"] {
   flex: 1 0 60%;
-  /* Grow to fill the space, with a basis of 60% */
   padding: 20px;
   font-size: 1.2em;
-  /* Larger font size for the input text */
-  /* border: 2px solid #ffffff; */
   border-radius: 4px;
   background: transparent;
-  /* color: #ffffff; */
   margin-right: 10px;
-  /* Ensure there's a gap between the input and the button */
 }
 
 .signup-section input[type="submit"] {
   padding: 20px 30px;
-  /* Increased padding for a larger button */
   font-size: 1.4em;
-  /* Increased font size for the button text */
-  font-weight: bold;
+  font-weight: 700;
   font-family: "Quicksand", sans-serif;
-  /* Ensure font consistency */
   color: #ffffff;
-  background-color: #ff69b4;
-  /* Pink color for the button, or use #D4F553 for green */
+  background-color: var(--sq-pink);
   border: none;
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s ease;
   flex: 0 0 auto;
-  /* Don't grow the button, keep its size based on content */
 }
 
-/* Hover effect for the button */
 .signup-section input[type="submit"]:hover {
   background-color: #e55d87;
-  /* Slightly darker shade of pink for hover */
-  /* Use a darker green if you go with the green color */
 }
 
-/* General styles for mobile devices */
-@media (max-width: 768px) {
-  header .hero-content {
-    padding-left: 15px;
-    /* Adjust padding for smaller screens */
-    align-items: center;
-    /* Center content for smaller screens */
-    text-align: center;
-    justify-content: center;
-    height: 100%;
-  }
-
-  header .hero-content .logo {
-    max-width: 80%;
-    /* Adjust logo size for smaller screens */
-    margin-bottom: 15px;
-  }
-
-  header .hero-content .hero-text {
-    max-width: 100%;
-    /* Allow text to fill container */
-    font-size: 1.5em;
-    /* Adjust font size for readability */
-  }
-
-  .master-of-elements .elements-icons {
-    flex-direction: column;
-    /* Stack icons vertically on smaller screens */
-    gap: 20px;
-  }
-
-  .master-of-elements .element-icon {
-    width: 100px;
-    /* Adjust icon size for smaller screens */
-    height: 100px;
-  }
-
-  .master-of-the-elements .elements-description {
-    font-size: 1em;
-  }
-
-  .about .container {
-    flex-direction: column;
-    /* Stack elements vertically */
-    align-items: center;
-    /* Center-align content */
-  }
-
-  .about .about-description {
-    max-width: 100%;
-    /* Allow description to fill container */
-    text-align: center;
-  }
-
-  .about .about-features {
-    flex-direction: column;
-    /* Stack features vertically */
-    gap: 30px;
-  }
-
-  .testimonials .testimonial-grid {
-    grid-template-columns: 1fr;
-    /* One column grid for testimonials */
-  }
-
-  .signup-section .mc-field-group {
-    flex-direction: column;
-    /* Stack input and button vertically */
-  }
-
-  .signup-section input[type="email"],
-  .signup-section input[type="submit"] {
-    width: 100%;
-    /* Full width for input and button */
-    margin: 10px 0;
-    /* Add space between stacked elements */
-  }
-
-  .about .about-description h2 {
-    font-size: 3.2em;
-    padding: 10px 0;
-    margin: 0;
-  }
-}
-
-/* Additional adjustments for very small devices */
-@media (max-width: 480px) {
-  .master-of-elements p,
-  .about .about-description,
-  .signup-section .signup-message {
-    font-size: 1.2em;
-    /* Slightly smaller font size for very small screens */
-  }
-
-  .about .feature img {
-    width: 100px;
-    /* Smaller feature images */
-    height: 100px;
-  }
-}
-
-/* Adjustments for smaller screens */
-@media (max-width: 768px) {
-  /* Element Icons: Stay in one row but smaller */
-  .master-of-elements .elements-icons {
-    flex-direction: row;
-    /* Keep icons in a row */
-    justify-content: center;
-    /* Center icons */
-    gap: 10px;
-    /* Reduce gap between icons */
-  }
-
-  .master-of-elements .element-icon {
-    width: 80px;
-    /* Make icons smaller */
-    height: 80px;
-  }
-
-  /* iPhone Image: Smaller and centered */
-  .iphone-wrapper {
-    display: none;
-    top: 50%;
-    /* Adjust top positioning */
-    left: 50%;
-    /* Center horizontally */
-    transform: translate(-50%, -50%) rotate(10deg);
-    /* Center and maintain rotation */
-    width: 200px;
-    /* Smaller width */
-    height: auto;
-    /* Maintain aspect ratio */
-  }
-
-  .iphone-image {
-    width: 100%;
-    /* Make the image fill the container */
-    height: auto;
-    /* Maintain aspect ratio */
-  }
-
-  /* Input Field: Prevent running off the screen */
-  .signup-section input[type="email"] {
-    flex: 1 0 auto;
-    /* Allow input to shrink but not grow beyond its content */
-    width: calc(100% - 140px);
-    /* Adjust width to prevent running off, considering button width */
-    margin-right: 10px;
-    /* Maintain gap between input and button */
-  }
-
-  .signup-section .mc-field-group {
-    flex-wrap: wrap;
-    /* Allow elements to wrap if there's not enough space */
-  }
-
-  .signup-section input[type="submit"] {
-    flex: 0 1 auto;
-    /* Allow button to shrink if necessary */
-    width: 130px;
-    /* Set a fixed width for the button */
-  }
-
-  .signup-section h2 {
-    font-size: 2.2em;
-    margin-bottom: 0.5em;
-  }
-
-  .master-of-elements .elements-description {
-    font-size: 1.2em;
-    text-transform: none;
-  }
-}
-
-/* Additional adjustments for very small devices */
-@media (max-width: 480px) {
-  /* Further reduce the size of element icons */
-  .master-of-elements .element-icon {
-    width: 60px;
-    height: 60px;
-    margin: 7px;
-  }
-
-  /* Adjust input and button to full width on very small screens */
-  .signup-section input[type="email"] {
-    width: 85%;
-  }
-
-  .signup-section input[type="submit"] {
-    width: 100%;
-    /* Full width for both input and button */
-    margin: 10px 0;
-    /* Add space between stacked elements */
-  }
-}
-/* ===== Header countdown + preorder ===== */
-
-/* ===== Big Launch Card (Header) ===== */
-
-.launch-card {
-  margin-top: 22px;
-  width: 100%;
-  max-width: 700px;
-  padding: 18px 18px 14px;
-  border-radius: 18px;
-  background: rgba(0, 0, 0, 0.32);
-  border: 1px solid rgba(255, 255, 255, 0.22);
-  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.35);
-  backdrop-filter: blur(10px);
-}
-
-.launch-card-top {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-  margin-bottom: 14px;
-  flex-wrap: wrap;
-}
-
-.launch-meta {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-
-.launch-kicker {
-  display: inline-block;
-  width: fit-content;
-  padding: 6px 10px;
-  border-radius: 999px;
-  background: rgba(212, 245, 83, 0.18);
-  border: 1px solid rgba(212, 245, 83, 0.35);
-  color: #d4f553;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  font-size: 0.8em;
-}
-
-.launch-date {
-  color: #ffffff;
-  font-weight: 800;
-  font-size: 1.2em;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.45);
-}
-
-.launch-ctas {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  justify-content: flex-end;
-  flex-wrap: wrap;
-}
-
-/* Preorder: use your existing .primary-btn but tighten it to fit inside the card */
-.preorder-btn {
-  padding: 12px 18px;
-  font-size: 1.05em;
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
-  white-space: nowrap;
-}
-
-/* Secondary button style that fits your brand without competing */
-.secondary-ghost {
-  padding: 12px 18px;
-  font-size: 1.05em;
-  border-radius: 40px;
-  background: transparent;
-  color: #ffffff;
-  border: 1px solid rgba(255, 255, 255, 0.55);
-  font-weight: 700;
-  text-decoration: none;
-  transition: background-color 0.2s ease, transform 0.2s ease;
-}
-
-.secondary-ghost:hover,
-.secondary-ghost:focus {
-  cursor: pointer;
-  background: rgba(255, 255, 255, 0.12);
-  transform: translateY(-1px);
-}
-
-/* Countdown layout */
-.countdown-grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(80px, 1fr));
-  gap: 12px;
-}
-
-.countdown-cell {
-  background: rgba(0, 0, 0, 0.18);
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  border-radius: 14px;
-  padding: 14px 10px;
-  text-align: center;
-}
-
-.countdown-number {
-  font-size: 2em;
-  font-weight: 800;
-  line-height: 1;
-  color: #ffffff;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.45);
-}
-
-.countdown-unit {
-  margin-top: 8px;
-  font-size: 0.85em;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.85);
-}
-
-.launch-card-foot {
-  margin-top: 12px;
-  font-size: 1em;
-  color: rgba(255, 255, 255, 0.88);
-}
-
-.launch-inline-link {
-  color: #ff69b4;
-  font-weight: 700;
-  text-decoration: none;
-  margin-left: 6px;
-}
-
-.launch-inline-link:hover,
-.launch-inline-link:focus {
-  text-decoration: underline;
-}
-
-/* Mobile */
-@media (max-width: 768px) {
-  .launch-card {
-    max-width: 100%;
-  }
-
-  .launch-card-top {
-    justify-content: center;
-    text-align: center;
-  }
-
-  .launch-ctas {
-    justify-content: center;
-    width: 100%;
-  }
-
-  .countdown-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .secondary-ghost,
-  .preorder-btn {
-    width: 100%;
-  }
-}
-
-/* ===== Echoes: full-width copy + corner badge ===== */
-
-.echoes-section {
-  padding: 90px 0;
-  position: relative;
-  overflow: hidden; /* keeps badge from causing horizontal scroll */
-}
-
-.echoes-section .container {
-  max-width: 1000px; /* narrower = premium reading width */
-  margin: 0 auto;
-  padding: 0 15px;
-  position: relative;
-  text-align: center;
-}
-
-/* Badge in corner */
-.echoes-badge {
-  position: absolute;
-  top: -22px;
-  left: 10px;
-  width: 225px; /* tweak this */
-  height: auto;
-  /* transform: rotate(6deg); */
-  filter: drop-shadow(0 16px 24px rgba(0, 0, 0, 0.18));
-  pointer-events: none;
-}
-
-/* Typography */
-.echoes-kicker {
-  color: #003a42;
-  font-size: 1.1em;
-  margin: 0 0 0.6em 0;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  font-weight: 700;
-}
-
-.echoes-title {
-  color: #003a42;
-  font-size: 3em;
-  font-weight: 700;
-  margin: 0 0 0.25em 0;
-}
-
-.echoes-subtitle {
-  margin: 0 0 1.1em 0;
-  font-size: 1.6em;
-  font-weight: 600;
-  color: #003a42;
-}
-
-.echoes-description {
-  max-width: 70ch;
-  margin: 0 auto 30px;
-  font-size: 1.35em;
-  color: #333;
-  line-height: 1.5;
-  text-transform: none;
-  letter-spacing: normal;
-}
-
-/* Highlights */
-.echoes-highlights {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
-  margin: 0 auto 28px;
-}
-
-.echoes-highlight {
-  background: rgba(255, 255, 255, 0.75);
-  border: 1px solid rgba(0, 58, 66, 0.16);
-  border-radius: 14px;
-  padding: 18px 16px;
-  backdrop-filter: blur(6px);
-}
-
-.echoes-highlight h4 {
-  margin: 0 0 8px 0;
-  font-size: 1.05em;
-  font-weight: 800;
-  color: #003a42;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-}
-
-.echoes-highlight p {
-  margin: 0;
-  color: #444;
-  font-size: 1em;
-  line-height: 1.35;
-  text-transform: none;
-  letter-spacing: normal;
-  font-weight: 500;
-}
-
-/* Actions */
-.echoes-actions {
-  display: flex;
-  justify-content: center;
-  gap: 12px;
-  flex-wrap: wrap;
-  align-items: center;
-  margin-top: 6px;
-}
-
-.echoes-fineprint {
-  margin: 14px 0 0 0;
-  color: #666;
-  font-size: 1em;
-}
-
-/* Responsive */
+/* =========================================================
+   RESPONSIVE — consolidated
+   ========================================================= */
 @media (max-width: 900px) {
   .echoes-highlights {
     grid-template-columns: 1fr;
@@ -981,6 +790,112 @@ header .hero-content .hero-text {
 }
 
 @media (max-width: 768px) {
+  /* HERO: mobile overlap fix + tighter layout */
+  header {
+    min-height: 100svh;
+    padding-bottom: 24px;
+  }
+
+  header .hero-image,
+  header .hero-overlay {
+    min-height: 100svh;
+  }
+
+  header .hero-content {
+    padding: 18px 15px;
+    gap: 10px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .hero-brand {
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 14px;
+  }
+
+  .brand-byline {
+    white-space: normal;
+  }
+
+  header .hero-content .logo {
+    max-height: 56px;
+    margin-bottom: 20px;
+  }
+
+  header .hero-content .hero-text {
+    font-size: 1em;
+    line-height: 1.25;
+    max-width: 35ch;
+  }
+
+  /* LAUNCH CARD: countdown stays one row + button below countdown */
+  .launch-card {
+    max-width: 520px;
+    width: 100%;
+    padding: 14px;
+    border-radius: 16px;
+    margin-top: 14px;
+
+    display: grid;
+    grid-template-areas:
+      "countdown"
+      "ctas"
+      "foot";
+  }
+
+  .launch-card-top {
+    display: contents;
+  }
+
+  .launch-meta {
+    display: none;
+  }
+
+  .countdown-grid {
+    grid-area: countdown;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+  }
+
+  .countdown-cell {
+    padding: 8px 4px;
+    border-radius: 10px;
+  }
+
+  .countdown-number {
+    font-size: 1.25em;
+  }
+
+  .countdown-unit {
+    margin-top: 4px;
+    font-size: 0.68em;
+    letter-spacing: 0.06em;
+  }
+
+  .launch-ctas {
+    grid-area: ctas;
+    width: 100%;
+    justify-content: center;
+    margin-top: 12px;
+  }
+
+  .preorder-btn {
+    width: 100%;
+    max-width: 520px;
+    padding: 12px 16px;
+    font-size: 1em;
+  }
+
+  .launch-card-foot {
+    grid-area: foot;
+    margin-top: 10px;
+    font-size: 0.9em;
+    line-height: 1.25;
+  }
+
+  /* ECHOES */
   .echoes-section {
     padding: 70px 0;
   }
@@ -1004,358 +919,90 @@ header .hero-content .hero-text {
   }
 
   .echoes-badge {
-    position: static; /* badge becomes inline on small screens */
+    position: static;
     margin: 0 auto 10px;
     display: block;
     transform: rotate(4deg);
   }
-}
 
-/* =========================================================
-   HERO — Echoes-first campaign hero
-   ========================================================= */
-
-header .hero-content {
-  justify-content: center;
-  max-width: 1180px;
-  margin: 0 auto;
-  padding: clamp(28px, 5vw, 60px);
-}
-
-.hero-brand {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  margin-bottom: 18px;
-}
-
-header .hero-content .logo {
-  max-height: 72px;
-  width: auto;
-  margin: 0 0 28px 0;
-}
-
-.brand-byline {
-  color: rgba(255, 255, 255, 0.82);
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  font-size: 0.85rem;
-  white-space: nowrap;
-}
-
-.hero-kicker {
-  margin: 0 0 10px 0;
-  display: inline-block;
-  width: fit-content;
-  padding: 7px 12px;
-  border-radius: 999px;
-  background: rgba(212, 245, 83, 0.18);
-  border: 1px solid rgba(212, 245, 83, 0.35);
-  color: #d4f553;
-  font-weight: 800;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  font-size: 0.9rem;
-}
-
-.hero-title {
-  margin: 0;
-  color: #ffffff;
-  font-weight: 900;
-  letter-spacing: -0.02em;
-  line-height: 1.02;
-  font-size: clamp(2.6rem, 5vw, 4.2rem);
-  text-shadow: 0 12px 40px rgba(0, 0, 0, 0.55);
-}
-
-.hero-subtitle {
-  margin: 6px 0 10px 0;
-  color: rgba(255, 255, 255, 0.92);
-  font-weight: 700;
-  font-size: clamp(1.15rem, 1.8vw, 1.5rem);
-  text-shadow: 0 10px 26px rgba(0, 0, 0, 0.45);
-}
-
-/* Make your original hero line act like supporting copy */
-header .hero-content .hero-text {
-  max-width: 40ch;
-  font-size: clamp(1.1rem, 1.6vw, 1.4rem);
-  line-height: 1.35;
-  font-weight: 700;
-  margin-top: 0;
-  margin-bottom: 0;
-  color: rgba(255, 255, 255, 0.92);
-}
-
-/* Slightly stronger overlay for readability */
-header .hero-overlay {
-  background-color: rgba(0, 0, 0, 0.38);
-}
-.hero-launch-date {
-  margin-top: 6px;
-  font-size: 1.2em;
-  font-weight: 700;
-  color: #d4f553; /* your launch green */
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-/* Mobile: center and stack nicely */
-@media (max-width: 768px) {
-  header .hero-content {
-    align-items: center;
-    text-align: center;
-  }
-
-  .hero-brand {
-    flex-direction: column;
-    gap: 8px;
-    margin-bottom: 14px;
-  }
-
-  .brand-byline {
-    white-space: normal;
-  }
-
-  .launch-card {
-    max-width: 520px;
-    width: 100%;
-  }
-
-  header .hero-content .logo {
-    max-height: 56px;
-    margin-bottom: 20px;
-  }
-}
-
-/* =========================================================
-   MOBILE HERO FIX — prevent overlap into Echoes section
-   ========================================================= */
-
-/* 1) Let the hero be "at least" the viewport height, but grow if needed */
-header {
-  min-height: 100vh;
-  height: auto; /* overrides your height: 100vh on small screens via media below */
-}
-
-/* 2) On mobile, don't force 100vh exactly (Safari + tall content = overlap pain) */
-@media (max-width: 768px) {
-  header {
-    height: auto; /* critical */
-    min-height: 100svh; /* better than vh on mobile browsers */
-    padding-bottom: 24px; /* gives breathing room before Echoes section */
-  }
-
-  /* Your overlay/image should still fill the header area */
-  header .hero-image,
-  header .hero-overlay {
-    height: 100%;
-    min-height: 100svh;
-  }
-
-  /* Tighten spacing so content fits better */
-  header .hero-content {
-    padding: 18px 15px;
-    gap: 10px;
-  }
-
-  /* Make the launch card smaller + less “tall” */
-  .launch-card {
-    max-width: 520px;
-    padding: 14px;
-    border-radius: 16px;
-    margin-top: 14px;
-  }
-
-  .launch-card-top {
-    margin-bottom: 10px;
-    gap: 10px;
-  }
-
-  .launch-kicker {
-    font-size: 0.75em;
-    padding: 5px 9px;
-  }
-
-  .launch-date {
-    font-size: 1.05em;
-  }
-
-  /* Countdown cells: smaller + tighter */
-  .countdown-grid {
-    grid-template-columns: repeat(4, 1fr); /* force one row */
-    gap: 8px; /* tighter spacing so it fits */
-  }
-
-  .countdown-cell {
-    padding: 8px 4px;
-    border-radius: 10px;
-  }
-
-  .countdown-number {
-    font-size: 1.35em; /* smaller so 4 fit cleanly */
-  }
-
-  .countdown-unit {
-    font-size: 0.7em;
-    letter-spacing: 0.06em;
-    margin-top: 4px;
-  }
-
-  .launch-card-foot {
-    margin-top: 10px;
-    font-size: 0.95em;
-    line-height: 1.3;
-  }
-
-  /* Button inside card: slightly smaller so it doesn't push everything down */
-  .preorder-btn {
-    padding: 12px 16px;
-    font-size: 1em;
-    width: 100%; /* helps prevent awkward wrap */
-    max-width: 520px;
-  }
-
-  .launch-meta {
+  /* ABOUT */
+  .iphone-wrapper {
     display: none;
   }
-}
 
-/* =========================================================
-   MOBILE HERO FIXES (copy/paste)
-   - Prevent hero overlapping next section
-   - Keep countdown cells in one row
-   - Move CTA button BELOW countdown (mobile-only)
-   - Tighten spacing + shrink hero text on mobile
-   ========================================================= */
-
-header {
-  min-height: 100vh;
-  height: auto;
-}
-
-@media (max-width: 768px) {
-  /* Let the hero grow naturally (avoids Safari 100vh weirdness + overlap) */
-  header {
-    height: auto;
-    min-height: 100svh;
-    padding-bottom: 24px;
-  }
-
-  header .hero-image,
-  header .hero-overlay {
-    height: 100%;
-    min-height: 100svh;
-  }
-
-  header .hero-content {
-    padding: 18px 15px;
-    gap: 10px;
-    align-items: center;
+  .about .about-description {
+    max-width: 100%;
     text-align: center;
-    justify-content: center;
   }
 
-  /* Slightly smaller supporting copy */
-  header .hero-content .hero-text {
-    font-size: 1em;
-    line-height: 1.25;
-    max-width: 35ch;
-  }
-
-  /* Brand row stacks nicely */
-  .hero-brand {
-    flex-direction: column;
-    gap: 8px;
-    margin-bottom: 14px;
-  }
-
-  header .hero-content .logo {
-    max-height: 56px;
-    width: auto;
-    margin-bottom: 20px;
-  }
-
-  .brand-byline {
-    white-space: normal;
-  }
-
-  /* Make the launch card less tall */
-  .launch-card {
-    max-width: 520px;
-    width: 100%;
-    padding: 14px;
-    border-radius: 16px;
-    margin-top: 14px;
-
-    /* Reorder pieces: countdown -> button -> foot */
-    display: grid;
-    grid-template-areas:
-      "countdown"
-      "ctas"
-      "foot";
-  }
-
-  /* KEY: remove wrapper layout constraints so children can be placed by grid */
-  .launch-card-top {
-    display: contents;
+  .about .about-description h2 {
+    font-size: 3.2em;
+    padding: 10px 0;
     margin: 0;
   }
 
-  /* Optional: hide meta on mobile (you said you're doing this) */
-  .launch-meta {
-    display: none;
+  .about .about-features {
+    flex-direction: column;
+    gap: 30px;
   }
 
-  /* Countdown: force one row */
-  .countdown-grid {
-    grid-area: countdown;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 8px;
-  }
-
-  .countdown-cell {
-    padding: 8px 4px;
-    border-radius: 10px;
-  }
-
-  .countdown-number {
-    font-size: 1.25em;
-    line-height: 1;
-  }
-
-  .countdown-unit {
-    font-size: 0.68em;
-    letter-spacing: 0.06em;
-    margin-top: 4px;
-  }
-
-  /* CTA: below countdown on mobile */
-  .launch-ctas {
-    grid-area: ctas;
-    width: 100%;
+  /* MASTER OF ELEMENTS: icons stay in a row but smaller */
+  .master-of-elements .elements-icons {
     justify-content: center;
-    margin-top: 12px;
+    gap: 10px;
   }
 
-  .preorder-btn {
+  .master-of-elements .element-icon {
+    width: 80px;
+    height: 80px;
+  }
+
+  .master-of-elements .elements-description {
+    font-size: 1.2em;
+    text-transform: none;
+  }
+
+  /* TESTIMONIALS */
+  .testimonial-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* SIGNUP: stack input/button */
+  .signup-section .mc-field-group {
+    flex-direction: column;
+  }
+
+  .signup-section input[type="email"],
+  .signup-section input[type="submit"] {
     width: 100%;
-    max-width: 520px;
-    padding: 12px 16px;
-    font-size: 1em;
-    white-space: nowrap;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .master-of-elements p,
+  .about .about-description,
+  .signup-section .signup-message {
+    font-size: 1.2em;
   }
 
-  /* Foot: keep or hide (choose one) */
-  .launch-card-foot {
-    grid-area: foot;
-    margin-top: 10px;
-    font-size: 0.9em;
-    line-height: 1.25;
+  .about .feature img {
+    width: 100px;
+    height: 100px;
   }
 
-  /* If you decide you don't need it on mobile, uncomment this:
-  .launch-card-foot { display: none; }
-  */
+  .master-of-elements .element-icon {
+    width: 60px;
+    height: 60px;
+    margin: 7px;
+  }
+
+  .signup-section input[type="email"] {
+    width: 85%;
+  }
+
+  .signup-section input[type="submit"] {
+    width: 100%;
+    margin: 10px 0;
+  }
 }
