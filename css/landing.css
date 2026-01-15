@@ -584,7 +584,6 @@ header .hero-content .hero-text {
 }
 
 .master-of-elements .primary-btn {
-  max-width: 200px;
   display: inline-block;
   margin-top: 20px;
 }
@@ -725,7 +724,7 @@ header .hero-content .hero-text {
 
 .signup-section .signup-message {
   font-size: 1.8em;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 
 .signup-section form {
@@ -1005,4 +1004,36 @@ header .hero-content .hero-text {
     width: 100%;
     margin: 10px 0;
   }
+}
+
+.signup-fineprint {
+  margin-top: 12px;
+  font-size: 0.95em;
+  color: #666;
+}
+
+.signup-fineprint a {
+  color: var(--sq-pink);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.signup-fineprint a:hover {
+  text-decoration: underline;
+}
+
+.master-of-elements .event-kicker {
+  color: #555;
+  font-size: 1.2em;
+  margin-top: 0;
+  /* margin-bottom: 0.5em; */
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+}
+
+.master-of-elements .elements-fineprint {
+  margin: 14px 0 0 0;
+  color: #666;
+  font-size: 1em;
 }
