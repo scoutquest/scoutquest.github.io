@@ -63,7 +63,7 @@
     "code": "EOF-gUhj9DzU9",
     "label": "Essence of Tennessee",
     "type": "Text Clue",
-    "icon": "park",
+    "iconImage": "https://scoutquest.co/quests/bicentennial/images/icons/EOT.svg",
     "steps": [
       {
         "step": 1,
@@ -160,6 +160,7 @@
     "label": "Flowing Through Tennessee",
     "type": "Text Clue",
     "icon": "water",
+    "iconImage": "https://scoutquest.co/quests/bicentennial/images/icons/FTT.svg",
     "steps": [
       {
         "step": 1,
@@ -259,7 +260,7 @@
     "code": "SATS-3X9Y5Z6AB",
     "label": "Scattered Across the Skies",
     "type": "Text Clue",
-    "icon": "flight",
+    "iconImage": "https://scoutquest.co/quests/bicentennial/images/icons/SATS.svg",
     "steps": [
       {
         "step": 1,
@@ -337,7 +338,7 @@
     "code": "TTT-3X9Y5Z6AB",
     "label": "Tracks Through Time",
     "type": "Text Clue",
-    "icon": "pets",
+    "iconImage": "https://scoutquest.co/quests/bicentennial/images/icons/TTT.svg",
     "steps": [
       {
         "step": 1,
@@ -402,7 +403,7 @@
     "code": "HBD-3X9Y5Z6AB",
     "label": "Happy Birthday, Tennessee!",
     "type": "Text Clue",
-    "icon": "cake",
+    "iconImage": "https://scoutquest.co/quests/bicentennial/images/icons/HBD.svg",
     "steps": [
       {
         "step": 1,
@@ -464,7 +465,7 @@
     "code": "FYTH-3X9Y5Z6AB",
     "label": "From Year to Here",
     "type": "Text Clue",
-    "icon": "calendar_month",
+    "iconImage": "https://scoutquest.co/quests/bicentennial/images/icons/FYTH.svg",
     "steps": [
       {
         "step": 1,
