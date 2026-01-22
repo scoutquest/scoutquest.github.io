@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -493,33 +493,20 @@
     </section>
   </body>
 
+  <script src="js/faq.js" defer></script>
+
   <script id="mcjs">
     !(function (c, h, i, m, p) {
-      (m = c.createElement(h)),
+      ((m = c.createElement(h)),
         (p = c.getElementsByTagName(h)[0]),
         (m.async = 1),
         (m.src = i),
-        p.parentNode.insertBefore(m, p);
+        p.parentNode.insertBefore(m, p));
     })(
       document,
       "script",
       "https://chimpstatic.com/mcjs-connected/js/users/4e0ceb6f9c65a41e574c4d38d/941c03b305703c23eb3a8c67d.js"
     );
-  </script>
-
-  <script>
-    function toggleFaq(id) {
-      var answer = document.getElementById(id);
-      var faqQuestion = answer.previousElementSibling;
-
-      if (answer.classList.contains("active")) {
-        answer.classList.remove("active");
-        faqQuestion.setAttribute("aria-expanded", "false");
-      } else {
-        answer.classList.add("active");
-        faqQuestion.setAttribute("aria-expanded", "true");
-      }
-    }
   </script>
 
   <script>

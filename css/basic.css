@@ -1,0 +1,132 @@
+@font-face {
+  font-family: "Quicksand";
+  src: url("../fonts/Quicksand-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 700;
+  font-display: swap;
+}
+
+:root {
+  --sq-teal: #003a42;
+  --sq-green: #d4f553;
+  --sq-pink: #ff69b4;
+  --sq-aqua-bg: rgba(158, 233, 228, 0.12);
+  --orange: #f54e00;
+
+  --container: 1200px;
+  --container-narrow: 800px;
+  --container-echoes: 1000px;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Quicksand", sans-serif;
+}
+
+/* Shared container pattern */
+.container {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 15px;
+}
+
+.container-narrow {
+  max-width: var(--container-narrow);
+  margin: 0 auto;
+  padding: 15px;
+}
+
+header.sq-header {
+  background-color: var(--orange);
+  width: 100%;
+  padding: 12px 0;
+  text-align: center;
+}
+
+header.sq-header .logo {
+  height: 48px;
+  display: block;
+  margin: 0 auto;
+}
+
+h2,
+h3,
+h4,
+h5 {
+  margin-bottom: 0.25em;
+}
+
+p,
+ol {
+  margin-top: 0.25em;
+}
+
+/* =========================================================
+   FAQ
+   ========================================================= */
+.faq {
+  padding: 2rem;
+}
+
+.faq .container {
+  max-width: var(--container-narrow);
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.faq h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 2.5rem;
+}
+
+.faq-item {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid var(--sq-pink);
+}
+
+.faq-question {
+  width: 100%;
+  text-align: left;
+  background: transparent;
+  border: none;
+  padding: 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+}
+
+.faq-question::after {
+  content: "\002B";
+  float: right;
+  font-size: 1.5rem;
+  color: var(--sq-pink);
+  font-weight: 600;
+}
+
+.faq-question[aria-expanded="true"]::after {
+  content: "\2212";
+}
+
+.faq-answer {
+  display: none;
+  padding: 15px;
+}
+
+.faq-answer a {
+  color: var(--sq-pink);
+}
+
+.faq-answer img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.faq-answer.active {
+  display: block;
+}
